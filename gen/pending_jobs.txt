@@ -1,0 +1,4 @@
+prod_hero 690cf1cf-98e9-4e7b-82de-3af089b853f4
+banner_sensors 8747c6dc-a6a4-488c-9818-80b44506b3bb
+banner_power 94af3ec4-1681-4f16-9e33-1265af8ee524
+banner_safety 64e43d61-5147-4d16-a94f-1b9bb65c1613

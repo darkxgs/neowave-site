@@ -1,0 +1,8 @@
+node_modules/
+.vercel/
+.env*
+gen/.env
+__pycache__/
+# raw downloads from the old site (third-party footage); the built site lives in site/
+/assets/
+/.claude/

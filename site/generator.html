@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Code Generator — NeoWave</title>
+<meta name="description" content="Configure any of 35 NeoWave sensors and controllers and get the exact ordering code. Decode existing codes, share configurations and request a quote.">
+<meta property="og:title" content="NeoWave Product Code Generator">
+<meta property="og:description" content="Sensors, controllers, meters, industrial switches and life-safety systems — engineered from sensor to system.">
+<meta property="og:image" content="assets/img/catalog-hero.webp">
+<link rel="icon" href="assets/img/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css?v=c11b1426">
+<link rel="stylesheet" href="assets/css/generator.css?v=865714e4">
+<script>document.documentElement.classList.add('js');if(!/[?&]motion=reduced/.test(location.search))document.documentElement.classList.add('force-motion');setTimeout(function(){document.documentElement.classList.add('pl-done','split-ready')},4500)</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<!-- Vercel Web Analytics (privacy-friendly, no cookies) -->
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pl-inner">
+    <div class="pl-bars"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="pl-word">NEO WAVE</div>
+    <div class="pl-count"><span id="plNum">0</span>%</div>
+  </div>
+</div>
+<div class="progress" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span>VIEW</span></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="/" class="logo" aria-label="NeoWave home"><img src="assets/img/logo.png" alt="NeoWave"></a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li class="has-mega">
+        <a href="/products">Products
+          <svg class="chev" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3.5l3 3 3-3"/></svg></a>
+        <div class="mega" role="menu">
+          <div><h4>I/O &amp; Data</h4><ul>
+            <li><a href="/products#cat-industrial-switches">Industrial switches</a></li>
+            <li><a href="/products#cat-i-o-modules">I/O modules</a></li></ul></div>
+          <div><h4>Sensors</h4><ul>
+            <li><a href="/products#cat-temperature-and-humidity">Temperature &amp; humidity</a></li>
+            <li><a href="/products#cat-air-quality">Air quality</a></li>
+            <li><a href="/products#cat-pressure-air-liquid">Pressure</a></li>
+            <li><a href="/products#cat-level-measuring">Level measuring</a></li>
+            <li><a href="/products#cat-flow-sensors-air-liquid">Flow sensors</a></li></ul></div>
+          <div><h4>HVAC Control</h4><ul>
+            <li><a href="/products#cat-smart-thermostat">Smart thermostats</a></li>
+            <li><a href="/products#cat-damper-actuators">Damper actuators</a></li></ul></div>
+          <div><h4>Power &amp; Energy</h4><ul>
+            <li><a href="/products#cat-btu-meters">BTU meters</a></li>
+            <li><a href="/products#cat-water-meters">Water meters</a></li></ul></div>
+          <div><h4>Life Safety</h4><ul>
+            <li><a href="/products#cat-fire-alarm-systems">Fire alarm systems</a></li>
+            <li><a href="/products#cat-lpg-natural-gas-detectors">LPG &amp; gas detectors</a></li></ul></div>
+          <a class="mega-feature" href="/products#cat-smart-thermostat">
+            <img src="assets/img/thermostat.png" alt="">
+            <b>TRM Smart Thermostat</b><span>Precise room control, beautiful design</span>
+          </a>
+        </div>
+      </li>
+      <li><a href="/career">Career</a></li>
+      <li><a href="/news">News &amp; Events</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="nav-gen" href="/generator"><i></i>CODE GENERATOR</a>
+      <a class="btn btn-primary" href="/contact?subject=quote">Get a quote</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+<nav class="mobile-menu" aria-label="Mobile">
+  <a href="/">Home</a>
+  <a href="/products">Products</a>
+  <a href="/career">Career</a>
+  <a href="/news">News &amp; Events</a>
+  <a href="/contact">Contact</a>
+  <a href="/generator" class="active">Product Code Generator</a>
+  <a class="btn btn-primary" href="/contact?subject=quote">Get a quote</a>
+</nav>
+
+<main>
+<section class="page-hero gen-hero">
+  <div class="gen-grid-bg" aria-hidden="true"></div>
+  <div class="wrap page-hero-content">
+    <nav class="crumbs reveal" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/products">Products</a><span>/</span><b>Code generator</b></nav>
+    <span class="eyebrow reveal">Product code generator</span>
+    <h1 data-split>Build your <em>ordering code.</em></h1>
+    <p class="lede reveal">Pick a model, choose its options and get the exact NeoWave ordering code, ready to copy, share or send for a quote. Already have a code? Paste it below to decode it.</p>
+    <form class="decode reveal" id="decodeForm" autocomplete="off">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h3M20 7V4h-3M4 17v3h3M20 17v3h-3M8 12h8"/></svg>
+      <input id="decodeInput" placeholder="Paste a code, e.g. TxTH29-W-3-V10-V10-1-1" aria-label="Product code to decode" spellcheck="false">
+      <button class="btn btn-primary" type="submit">Decode <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></button>
+    </form>
+    <p class="decode-msg" id="decodeMsg" role="status"></p>
+    <div class="ph-stats gen-stats reveal">
+      <div><b><span data-count="35">35</span></b><span>Configurable models</span></div>
+      <div><b><span data-count="460">460</span></b><span>Options</span></div>
+      <div><b><span data-count="6">6</span></b><span>Product types</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="gen-app light" id="app">
+  <div class="wrap gen-layout">
+    <!-- model browser -->
+    <aside class="browser" aria-label="Choose a model">
+      <div class="br-head">
+        <span class="br-step">01</span>
+        <div><b>Choose a model</b><span id="brCount">35 models</span></div>
+      </div>
+      <label class="br-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="brSearch" type="search" placeholder="Search model or name" aria-label="Search models">
+      </label>
+      <div class="br-types" id="brTypes" role="tablist" aria-label="Product type"></div>
+      <div class="br-feats" id="brFeats" aria-label="Features"></div>
+      <div class="br-list" id="brList" role="listbox" aria-label="Models"></div>
+    </aside>
+
+    <!-- configurator -->
+    <div class="config" id="config" aria-live="polite">
+      <div class="cfg-empty" id="cfgEmpty">
+        <div class="cfg-empty-art" aria-hidden="true"><span>Tx</span><i>-</i><span>?</span><i>-</i><span>?</span><i>-</i><span>?</span></div>
+        <b>Select a model to start configuring</b>
+        <p>Each option you choose fills in one segment of the ordering code. Every option has its own code, shown on its chip.</p>
+      </div>
+      <div class="cfg" id="cfg" hidden>
+        <header class="cfg-head">
+          <div class="cfg-img" id="cfgImg"></div>
+          <div class="cfg-meta">
+            <span class="br-step">02</span>
+            <span class="cfg-type" id="cfgType"></span>
+            <h2 id="cfgName"></h2>
+            <p id="cfgDesc"></p>
+            <div class="cfg-docs" id="cfgDocs"></div>
+          </div>
+        </header>
+
+        <div class="anatomy" id="anatomy" aria-label="Product code"></div>
+
+        <div class="gspecs-head">
+          <b>Configure options</b>
+          <span id="specProgress"></span>
+          <button class="btn-text" id="resetBtn" type="button">Reset</button>
+        </div>
+        <div class="g-specs" id="specs"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- result bar -->
+  <div class="result" id="result" hidden>
+    <div class="wrap result-inner">
+      <div class="res-code">
+        <small id="resLabel">Your ordering code</small>
+        <code id="resCode"></code>
+      </div>
+      <div class="res-actions">
+        <button class="btn btn-primary" id="copyCode" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><span>Copy code</span></button>
+        <button class="btn btn-ghost" id="copyDesc" type="button">Copy description</button>
+        <button class="btn btn-ghost icon-btn" id="shareBtn" type="button" aria-label="Copy share link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg></button>
+        <a class="btn btn-ghost" id="quoteBtn" href="/contact?subject=quote">Request a quote <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section gen-recent light" id="recentSec" hidden>
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">On this device</span>
+        <h2 class="h2">Recent codes.</h2>
+      </div>
+      <button class="btn btn-dark" id="clearRecent" type="button">Clear history</button>
+    </div>
+    <div class="recent-list" id="recentList"></div>
+  </div>
+</section>
+
+<noscript><div class="wrap" style="padding:60px 0;color:#fff">The code generator needs JavaScript. You can still browse every model and its datasheet on the <a href="/products" style="color:#4fb2f5">products page</a>.</div></noscript>
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-card reveal">
+      <svg class="waves" viewBox="0 0 1200 260" preserveAspectRatio="none" id="waves" aria-hidden="true"></svg>
+      <div class="cta-grid">
+        <div>
+          <span class="eyebrow">Get in touch</span>
+          <h2 data-split>Let's transform your space, together.</h2>
+          <p class="lede">Questions, quotes or a project to scope? Our engineers will get back to you shortly.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="/contact">Contact us
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
+            <a class="btn btn-ghost" href="/products">Browse catalog</a>
+          </div>
+        </div>
+        <div class="contact-list">
+          <a class="contact-item" href="tel:+13025251275">
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+            <div><small>Talk with us</small><b>+1 (302) 525-1275</b></div>
+          </a>
+          <a class="contact-item" href="mailto:info@neowave.tech">
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></span>
+            <div><small>Email us</small><b>info@neowave.tech</b></div>
+          </a>
+          <div class="contact-item">
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div><small>Location</small><b>8 The Green A, Dover, DE 19901</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/img/logo.png" alt="NeoWave" style="height:34px;width:auto">
+        <p>Smart devices, sensors and systems for safer, smarter, more efficient environments.</p>
+      </div>
+      <div><h4>Products</h4><ul>
+        <li><a href="/products#cat-industrial-switches">Industrial switches</a></li>
+        <li><a href="/products#cat-i-o-modules">I/O modules</a></li>
+        <li><a href="/products#cat-temperature-and-humidity">Temperature &amp; humidity</a></li>
+        <li><a href="/products#cat-air-quality">Air quality</a></li></ul></div>
+      <div><h4>More</h4><ul>
+        <li><a href="/products#cat-smart-thermostat">Smart thermostats</a></li>
+        <li><a href="/products#cat-btu-meters">BTU meters</a></li>
+        <li><a href="/products#cat-water-meters">Water meters</a></li>
+        <li><a href="/products#cat-fire-alarm-systems">Fire alarm systems</a></li></ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="/career">Career</a></li>
+        <li><a href="/news">News &amp; events</a></li>
+        <li><a href="/generator">Product code generator</a></li>
+        <li><a href="/contact">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="tel:+13025251275">+1 (302) 525-1275</a></li>
+        <li><a href="mailto:info@neowave.tech">info@neowave.tech</a></li>
+        <li><a href="/contact">8 The Green A, Dover,<br>DE 19901, United States</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> NeoWave. All rights reserved.</span>
+      <span>Smart building · Industrial IoT · Life safety</span>
+    </div>
+    <div class="wordmark" aria-hidden="true" data-split="chars">NEO WAVE</div>
+  </div>
+</footer>
+
+<script defer src="assets/js/main.js?v=4f95ee12"></script>
+<script defer src="assets/js/generator.js?v=a21b28da"></script>
+</body>
+</html>

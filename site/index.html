@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NeoWave — Smart Building, Sensing &amp; Industrial Automation</title>
+<meta name="description" content="NeoWave designs smart devices, sensors and systems for building automation, HVAC control, energy metering, industrial networking and life safety.">
+<meta property="og:title" content="NeoWave — Safer, smarter environments">
+<meta property="og:description" content="Sensors, controllers, meters, industrial switches and life-safety systems — engineered from sensor to system.">
+<meta property="og:image" content="assets/img/hero-house.webp">
+<link rel="icon" href="assets/img/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/main.css?v=c11b1426">
+<script>document.documentElement.classList.add('js');if(!/[?&]motion=reduced/.test(location.search))document.documentElement.classList.add('force-motion');setTimeout(function(){document.documentElement.classList.add('pl-done','split-ready')},4500)</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script defer src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<!-- Vercel Web Analytics (privacy-friendly, no cookies) -->
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pl-inner">
+    <div class="pl-bars"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="pl-word">NEO WAVE</div>
+    <div class="pl-count"><span id="plNum">0</span>%</div>
+  </div>
+</div>
+<div class="progress" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><span>VIEW</span></div>
+<div class="cursor-dot" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="/" class="logo" aria-label="NeoWave home"><img src="assets/img/logo.png" alt="NeoWave"></a>
+    <ul class="nav-links">
+      <li><a href="/" class="active">Home</a></li>
+      <li class="has-mega">
+        <a href="/products">Products
+          <svg class="chev" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3.5l3 3 3-3"/></svg></a>
+        <div class="mega" role="menu">
+          <div><h4>I/O &amp; Data</h4><ul>
+            <li><a href="/products#cat-industrial-switches">Industrial switches</a></li>
+            <li><a href="/products#cat-i-o-modules">I/O modules</a></li></ul></div>
+          <div><h4>Sensors</h4><ul>
+            <li><a href="/products#cat-temperature-and-humidity">Temperature &amp; humidity</a></li>
+            <li><a href="/products#cat-air-quality">Air quality</a></li>
+            <li><a href="/products#cat-pressure-air-liquid">Pressure</a></li>
+            <li><a href="/products#cat-level-measuring">Level measuring</a></li>
+            <li><a href="/products#cat-flow-sensors-air-liquid">Flow sensors</a></li></ul></div>
+          <div><h4>HVAC Control</h4><ul>
+            <li><a href="/products#cat-smart-thermostat">Smart thermostats</a></li>
+            <li><a href="/products#cat-damper-actuators">Damper actuators</a></li></ul></div>
+          <div><h4>Power &amp; Energy</h4><ul>
+            <li><a href="/products#cat-btu-meters">BTU meters</a></li>
+            <li><a href="/products#cat-water-meters">Water meters</a></li></ul></div>
+          <div><h4>Life Safety</h4><ul>
+            <li><a href="/products#cat-fire-alarm-systems">Fire alarm systems</a></li>
+            <li><a href="/products#cat-lpg-natural-gas-detectors">LPG &amp; gas detectors</a></li></ul></div>
+          <a class="mega-feature" href="/products#cat-smart-thermostat">
+            <img src="assets/img/thermostat.png" alt="">
+            <b>TRM Smart Thermostat</b><span>Precise room control, beautiful design</span>
+          </a>
+        </div>
+      </li>
+      <li><a href="/career">Career</a></li>
+      <li><a href="/news">News &amp; Events</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="nav-gen" href="/generator"><i></i>CODE GENERATOR</a>
+      <a class="btn btn-primary" href="/contact?subject=quote">Get a quote</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu"><span></span></button>
+  </div>
+</header>
+<nav class="mobile-menu" aria-label="Mobile">
+  <a href="/">Home</a>
+  <a href="/products">Products</a>
+  <a href="/career">Career</a>
+  <a href="/news">News &amp; Events</a>
+  <a href="/contact">Contact</a>
+  <a href="/generator">Product Code Generator</a>
+  <a class="btn btn-primary" href="/contact?subject=quote">Get a quote</a>
+</nav>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-media">
+    <video autoplay muted loop playsinline preload="auto" poster="assets/img/hero-house.webp">
+      <source src="assets/video/hero-loop.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="wrap hero-content">
+    <span class="eyebrow reveal">Building automation · Industrial IoT · Life safety</span>
+    <h1 data-split>Safer, smarter spaces. <em>Engineered</em> from sensor to system.</h1>
+    <p class="lede reveal d2">NeoWave builds the smart devices, sensors and controls that make homes, buildings and plants more comfortable, more secure and radically more efficient.</p>
+    <div class="hero-actions reveal d3">
+      <a class="btn btn-primary" href="/products">Explore products
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
+      <a class="btn btn-ghost" href="/contact">Talk to an engineer</a>
+    </div>
+    <nav class="hero-rail reveal d4" aria-label="Product families">
+      <a href="#products"><small>01</small><b>Sensors &amp; Switches</b><span>Temp, air, pressure, level, flow</span></a>
+      <a href="#products"><small>02</small><b>HVAC Control</b><span>Thermostats &amp; actuators</span></a>
+      <a href="#products"><small>03</small><b>I/O &amp; Data</b><span>Industrial switches, I/O</span></a>
+      <a href="#products"><small>04</small><b>Power &amp; Energy</b><span>BTU &amp; water metering</span></a>
+      <a href="#products"><small>05</small><b>Life Safety</b><span>Fire &amp; gas detection</span></a>
+    </nav>
+  </div>
+  <div class="scroll-cue">SCROLL</div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>TxTH91-XP</span><span>NW-ISM-4GX24GT-C</span><span>DAM20</span><span>UTM22</span><span>AQS820</span><span>TxRLs 26GHz</span><span>NGD500</span><span>TRM SERIES</span><span>TxDP405</span><span>BC220 MODBUS TCP</span><span>UTW19</span><span>TxCDI35</span><span>EMF 5X</span><span>VTRM20-XP</span>
+    <span>TxTH91-XP</span><span>NW-ISM-4GX24GT-C</span><span>DAM20</span><span>UTM22</span><span>AQS820</span><span>TxRLs 26GHz</span><span>NGD500</span><span>TRM SERIES</span><span>TxDP405</span><span>BC220 MODBUS TCP</span><span>UTW19</span><span>TxCDI35</span><span>EMF 5X</span><span>VTRM20-XP</span>
+  </div>
+</div>
+
+<!-- ============ INTRO ============ -->
+<section class="intro">
+  <div class="wrap intro-grid">
+    <div>
+      <span class="eyebrow reveal">Welcome to NeoWave</span>
+      <p class="intro-statement" data-split="scrub">NeoWave is a <strong>US-based technology company</strong> building smart devices, sensors and systems that <strong>optimize comfort, security and energy efficiency</strong> for homes and buildings. Ride the wave of innovation, and <strong>transform the way you live and work.</strong></p>
+      <div class="intro-foot reveal d2">
+        <div><b>60+ devices</b><span>Across 13 product lines</span></div>
+        <div><b>BMS-ready</b><span>Modbus, BACnet, IoT</span></div>
+        <div><b>Datasheets</b><span>For every product</span></div>
+      </div>
+    </div>
+    <div class="intro-visual reveal d2" id="introVisual">
+      <img src="assets/img/sensor-interior.webp" alt="NeoWave temperature and humidity sensor mounted in a modern living room" loading="lazy">
+      <div class="live-dot"><i></i>SYSTEM ONLINE</div>
+      <div class="intro-badge">
+        <video autoplay muted loop playsinline preload="none" data-lazy><source data-src="assets/video/logo-intro.mp4" type="video/mp4"></video>
+        <div><b>One ecosystem</b><span>Lighting, climate, security and energy, all connected.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCTS ============ -->
+<section class="section light" id="products">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow reveal">Our products</span>
+        <h2 class="h2" data-split>Transforming spaces,<br>transforming lives.</h2>
+      </div>
+      <p class="lede reveal d2">Five product families, one ecosystem. From a single room sensor to plant-wide networks, every device is designed to work together.</p>
+    </div>
+
+    <div class="bento">
+      <div class="tile tile-1 reveal">
+        <div class="tile-top"><span class="tile-num">01 / SENSORS &amp; SWITCHES</span><span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></div>
+        <h3>Precision sensing for every variable that matters.</h3>
+        <p>Pressure, temperature, humidity, flow, level and air quality, measured with lab-grade accuracy.</p>
+        <div class="sensor-stage">
+          <img class="tile-img s-a" src="assets/img/temp-humidity.png" alt="Room temperature and humidity sensor" loading="lazy">
+          <img class="tile-img s-b" src="assets/img/air-sensor.png" alt="Air quality sensor" loading="lazy">
+          <img class="tile-img s-c" src="assets/img/pressure-sensor.png" alt="Differential pressure sensor" loading="lazy">
+          <img class="tile-img s-d" src="assets/img/level-sensor.png" alt="Submersible level transducer" loading="lazy">
+        </div>
+        <div class="chips">
+          <a href="/products#cat-temperature-and-humidity">Temperature &amp; humidity</a>
+          <a href="/products#cat-air-quality">Air quality</a>
+          <a href="/products#cat-pressure-air-liquid">Pressure</a>
+          <a href="/products#cat-level-measuring">Level</a>
+          <a href="/products#cat-flow-sensors-air-liquid">Flow</a>
+        </div>
+      </div>
+
+      <div class="tile tile-2 reveal d1">
+        <div class="tile-top"><span class="tile-num">02 / HVAC CONTROL</span><span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></div>
+        <h3>Climate, under control.</h3>
+        <p>Smart thermostats and damper actuators for efficient, comfortable HVAC.</p>
+        <img class="tile-img b" src="assets/img/damper-actuator.png" alt="Damper actuator" loading="lazy">
+        <img class="tile-img" src="assets/img/thermostat.png" alt="TRM smart thermostat" loading="lazy">
+        <div class="chips">
+          <a href="/products#cat-smart-thermostat">Smart thermostats</a>
+          <a href="/products#cat-damper-actuators">Damper actuators</a>
+        </div>
+      </div>
+
+      <div class="tile tile-3 reveal d2">
+        <div class="tile-top"><span class="tile-num">03 / I/O &amp; DATA</span><span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></div>
+        <h3>Connectivity built for the plant floor.</h3>
+        <p>Managed industrial switches and Modbus I/O modules.</p>
+        <img class="tile-img b" src="assets/img/io-module.png" alt="BC220 Modbus TCP I/O module" loading="lazy">
+        <img class="tile-img" src="assets/img/switch.png" alt="Industrial Ethernet switch" loading="lazy">
+        <div class="chips">
+          <a href="/products#cat-industrial-switches">Industrial switches</a>
+          <a href="/products#cat-i-o-modules">I/O modules</a>
+        </div>
+      </div>
+
+      <div class="tile tile-4 reveal">
+        <div class="tile-top"><span class="tile-num">04 / POWER &amp; ENERGY</span><span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></div>
+        <h3>Measure every unit. Save every one you can.</h3>
+        <p>Ultrasonic BTU and water meters, plus electromagnetic flowmeters for accurate billing and optimization.</p>
+        <img class="tile-img" src="assets/img/flow-meter.png" alt="Electromagnetic flow meter" loading="lazy">
+        <div class="chips">
+          <a href="/products#cat-btu-meters">BTU meters</a>
+          <a href="/products#cat-water-meters">Water meters</a>
+        </div>
+      </div>
+
+      <div class="tile tile-5 reveal d1">
+        <div class="tile-top"><span class="tile-num">05 / LIFE SAFETY</span><span class="tile-arrow" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></div>
+        <h3>Protecting lives is our priority.</h3>
+        <p>Conventional, addressable and wireless fire alarm systems, plus LPG and natural gas detection.</p>
+        <img class="tile-bg" src="assets/img/fire-alarm.jpg" alt="" loading="lazy">
+        <div class="chips">
+          <a href="/products#cat-fire-alarm-systems">Fire alarm systems</a>
+          <a href="/products#cat-lpg-natural-gas-detectors">LPG &amp; gas detectors</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED ============ -->
+<section class="featured">
+  <div class="grid-bg"></div>
+  <div class="wrap featured-grid">
+    <div>
+      <span class="eyebrow reveal">Featured · Industrial networking</span>
+      <h2 class="h2" data-split>Built for −40°C.<br>Rated for the real world.</h2>
+      <span class="model reveal d2">NW-ISM-4GX24GT-C</span>
+      <p class="lede reveal d2" style="margin-top:20px">A fanless 24-port Gigabit + 4-port fiber L2+ managed switch, hardened for extreme environments and critical uptime.</p>
+      <div class="specs reveal d3">
+        <div class="spec"><b><span data-count="28">28</span><small>ports</small></b><span>24× GbE RJ45 + 4× SFP</span></div>
+        <div class="spec"><b>&lt;<span data-count="50">50</span><small>ms</small></b><span>ERPS ring failover</span></div>
+        <div class="spec"><b>−40/75<small>°C</small></b><span>Operating temperature</span></div>
+        <div class="spec"><b><span data-count="15">15</span><small>kV</small></b><span>Lightning protection</span></div>
+      </div>
+      <div class="reveal d4" style="display:flex;gap:14px;flex-wrap:wrap">
+        <a class="btn btn-primary" href="https://neowave.tech/wp-content/uploads/2025/04/NW-ISM-4GX24GT-C.pdf">Download datasheet
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
+        <a class="btn btn-ghost" href="/products#cat-industrial-switches">All switches</a>
+      </div>
+    </div>
+    <div class="featured-visual reveal d2">
+      <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+      <img src="assets/img/switch.png" alt="NeoWave industrial Ethernet switch" loading="lazy">
+      <div class="callout c1"><i></i>FANLESS COOLING</div>
+      <div class="callout c2"><i></i>DIN-RAIL MOUNT</div>
+      <div class="callout c3"><i></i>L2+ MANAGED</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOLUTIONS ============ -->
+<section class="solutions">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow reveal">Solutions</span>
+        <h2 class="h2" data-split>From living rooms<br>to production lines.</h2>
+      </div>
+      <p class="lede reveal d2">The same engineering rigor, scaled to fit, whether you're outfitting a single home or a large commercial facility.</p>
+    </div>
+    <div class="sol-grid">
+      <a class="sol reveal" href="/products">
+        <img src="assets/img/smart-living.webp" alt="NeoWave smart thermostat glowing in a modern living room at night" loading="lazy">
+        <span class="tag">Residential</span>
+        <h3>Smart living with NeoWave</h3>
+        <p>Intelligent thermostats, lighting control, security and energy management that make your home more comfortable, convenient and secure.</p>
+        <ul><li>Climate</li><li>Lighting</li><li>Security</li><li>Energy</li></ul>
+        <span class="link">Discover smart living <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span>
+      </a>
+      <a class="sol reveal d1" href="/products">
+        <img src="assets/img/industrial-cabinet.webp" alt="Industrial switches and I/O modules in a control cabinet on a factory floor" loading="lazy">
+        <span class="tag">Commercial &amp; Industrial</span>
+        <h3>Unlock the power of automation</h3>
+        <p>Integrated climate control, security and energy management that streamlines operations, raises comfort and cuts energy use.</p>
+        <ul><li>BMS</li><li>Process control</li><li>Metering</li><li>Networking</li></ul>
+        <span class="link">Explore automation <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY ============ -->
+<section class="section light">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow reveal">Why choose us</span>
+        <h2 class="h2" data-split>Smart solutions,<br>seamless living.</h2>
+      </div>
+      <p class="lede reveal d2">Choosing NeoWave means choosing excellence, innovation and reliability. Here's what sets us apart.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why reveal"><span class="why-n">01</span>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 1v4M15 1v4M9 19v4M15 19v4M1 9h4M1 15h4M19 9h4M19 15h4"/><rect x="9" y="9" width="6" height="6" rx="1"/></svg></div>
+        <h3>Cutting-edge technology</h3><p>State-of-the-art devices, sensors and systems at the forefront of innovation, so you always benefit from the latest advances.</p></div>
+      <div class="why reveal d1"><span class="why-n">02</span>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 5-9 5-9-5 9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 17l9 5 9-5"/></svg></div>
+        <h3>Comprehensive solutions</h3><p>From comfort to security to energy efficiency, one portfolio that meets diverse needs across every industrial sector.</p></div>
+      <div class="why reveal d2"><span class="why-n">03</span>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+        <h3>Proven track record</h3><p>Years of successful deployments across residential, commercial and industrial projects, with results you can measure.</p></div>
+      <div class="why reveal"><span class="why-n">04</span>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h3>Customer-centric approach</h3><p>Dedicated support, tailored solutions and responsive service at every step of your journey.</p></div>
+      <div class="why reveal d1"><span class="why-n">05</span>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg></div>
+        <h3>Scalability &amp; flexibility</h3><p>From a small home to a large commercial building, our solutions adapt to your requirements and grow with you.</p></div>
+      <div class="why reveal d2"><span class="why-n">06</span>
+        <div class="why-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg></div>
+        <h3>Commitment to sustainability</h3><p>Energy-efficient products and precise metering that help reduce consumption and environmental impact.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ IMPACT ============ -->
+<section class="impact">
+  <video autoplay muted loop playsinline preload="none" data-lazy poster="assets/img/network-city.webp"><source data-src="assets/video/network-globe.webm" type="video/webm"></video>
+  <div class="wrap">
+    <div class="impact-head">
+      <span class="eyebrow reveal">NeoWave impact</span>
+      <h2 class="h2" data-split>Join the wave of innovation.</h2>
+      <p class="lede reveal d2">From products sold to energy saved, here's the difference we're making.</p>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><b><span data-count="8">8</span><sup>+</sup></b><span>Years in business</span></div>
+      <div class="stat reveal d1"><b><span data-count="200">200</span><sup>+</sup></b><span>Happy customers</span></div>
+      <div class="stat reveal d2"><b><span data-count="97">97</span><sup>%</sup></b><span>Customer satisfaction</span></div>
+      <div class="stat reveal d3"><b><span data-count="100">100</span><sup>K+</sup></b><span>Products sold</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWS ============ -->
+<section class="section light">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow reveal">News &amp; events</span>
+        <h2 class="h2" data-split>Insights from the field.</h2>
+      </div>
+      <a class="btn btn-dark reveal d2" href="/news">All articles
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
+    </div>
+    <div class="news-grid">
+      <a class="post reveal" href="/news-industrial-automation-trends">
+        <div class="post-img"><img src="assets/img/news-manufacturing.jpg" alt="Engineer with robotic arms and data overlays" loading="lazy"></div>
+        <div class="post-body">
+          <div class="post-meta"><b>Automation</b><span>Feb 20, 2024</span></div>
+          <h3>Harnessing innovation: emerging trends in industrial automation for efficiency and sustainability</h3>
+          <p>In the ever-evolving landscape of industrial automation, staying ahead of the curve is essential.</p>
+          <span class="link">Read article <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span>
+        </div>
+      </a>
+      <a class="post reveal d1" href="/news-environmental-monitoring">
+        <div class="post-img"><img src="assets/img/news-monitoring.jpg" alt="Engineers reviewing data on a factory floor" loading="lazy"></div>
+        <div class="post-body">
+          <div class="post-meta"><b>Monitoring</b><span>Feb 20, 2024</span></div>
+          <h3>Safeguarding health and productivity: environmental monitoring in workplace safety</h3>
+          <p>In today's increasingly complex work environments, ensuring the health and safety of employees is paramount.</p>
+          <span class="link">Read article <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span>
+        </div>
+      </a>
+      <a class="post reveal d2" href="/news-switches-io-modules">
+        <div class="post-img"><img src="assets/img/automation-engineer.webp" alt="Robotic production line" loading="lazy"></div>
+        <div class="post-body">
+          <div class="post-meta"><b>Networking</b><span>Feb 20, 2024</span></div>
+          <h3>Streamlining industrial processes: the crucial role of industrial switches and I/O modules</h3>
+          <p>In the fast-paced world of manufacturing and industrial operations, efficiency is paramount.</p>
+          <span class="link">Read article <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-card reveal">
+      <svg class="waves" viewBox="0 0 1200 260" preserveAspectRatio="none" id="waves" aria-hidden="true"></svg>
+      <div class="cta-grid">
+        <div>
+          <span class="eyebrow">Get in touch</span>
+          <h2 data-split>Let's transform your space, together.</h2>
+          <p class="lede">Questions, quotes or a project to scope? Our engineers will get back to you shortly.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="/contact">Contact us
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
+            <a class="btn btn-ghost" href="/products">Browse catalog</a>
+          </div>
+        </div>
+        <div class="contact-list">
+          <a class="contact-item" href="tel:+13025251275">
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+            <div><small>Talk with us</small><b>+1 (302) 525-1275</b></div>
+          </a>
+          <a class="contact-item" href="mailto:info@neowave.tech">
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg></span>
+            <div><small>Email us</small><b>info@neowave.tech</b></div>
+          </a>
+          <div class="contact-item">
+            <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <div><small>Location</small><b>8 The Green A, Dover, DE 19901</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="assets/img/logo.png" alt="NeoWave" style="height:34px;width:auto">
+        <p>Smart devices, sensors and systems for safer, smarter, more efficient environments.</p>
+      </div>
+      <div><h4>Products</h4><ul>
+        <li><a href="/products#cat-industrial-switches">Industrial switches</a></li>
+        <li><a href="/products#cat-i-o-modules">I/O modules</a></li>
+        <li><a href="/products#cat-temperature-and-humidity">Temperature &amp; humidity</a></li>
+        <li><a href="/products#cat-air-quality">Air quality</a></li></ul></div>
+      <div><h4>More</h4><ul>
+        <li><a href="/products#cat-smart-thermostat">Smart thermostats</a></li>
+        <li><a href="/products#cat-btu-meters">BTU meters</a></li>
+        <li><a href="/products#cat-water-meters">Water meters</a></li>
+        <li><a href="/products#cat-fire-alarm-systems">Fire alarm systems</a></li></ul></div>
+      <div><h4>Company</h4><ul>
+        <li><a href="/career">Career</a></li>
+        <li><a href="/news">News &amp; events</a></li>
+        <li><a href="/generator">Product code generator</a></li>
+        <li><a href="/contact">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="tel:+13025251275">+1 (302) 525-1275</a></li>
+        <li><a href="mailto:info@neowave.tech">info@neowave.tech</a></li>
+        <li><a href="/contact">8 The Green A, Dover,<br>DE 19901, United States</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> NeoWave. All rights reserved.</span>
+      <span>Smart building · Industrial IoT · Life safety</span>
+    </div>
+    <div class="wordmark" aria-hidden="true" data-split="chars">NEO WAVE</div>
+  </div>
+</footer>
+
+<script defer src="assets/js/main.js?v=4f95ee12"></script>
+</body>
+</html>

@@ -1,0 +1,3402 @@
+{
+ "families": [
+  {
+   "id": "sensors-switches",
+   "name": "Sensors & Switches",
+   "sort": 0
+  },
+  {
+   "id": "hvac-control",
+   "name": "HVAC Control",
+   "sort": 1
+  },
+  {
+   "id": "io-modules",
+   "name": "I/O & Data Transmission",
+   "sort": 2
+  },
+  {
+   "id": "power-energy",
+   "name": "Power & Energy",
+   "sort": 3
+  },
+  {
+   "id": "life-safety",
+   "name": "Life Safety",
+   "sort": 4
+  }
+ ],
+ "types": [
+  {
+   "id": "smart-thermostat",
+   "family": "hvac-control",
+   "name": "Smart thermostats",
+   "sort": 0
+  },
+  {
+   "id": "damper-actuators",
+   "family": "hvac-control",
+   "name": "Damper Actuators",
+   "sort": 1
+  },
+  {
+   "id": "industrial-switches",
+   "family": "io-modules",
+   "name": "Industrial switches",
+   "sort": 0
+  },
+  {
+   "id": "io-modules",
+   "family": "io-modules",
+   "name": "I/O modules",
+   "sort": 1
+  },
+  {
+   "id": "fire-alarm",
+   "family": "life-safety",
+   "name": "Fire Alarm Systems",
+   "sort": 0
+  },
+  {
+   "id": "gas-detectors",
+   "family": "life-safety",
+   "name": "LPG & Natural Gas Detectors",
+   "sort": 1
+  },
+  {
+   "id": "btu-meters",
+   "family": "power-energy",
+   "name": "BTU Meters",
+   "sort": 0
+  },
+  {
+   "id": "water-meters",
+   "family": "power-energy",
+   "name": "Water Meters",
+   "sort": 1
+  },
+  {
+   "id": "temp-humid",
+   "family": "sensors-switches",
+   "name": "Temperature & humidity",
+   "sort": 0
+  },
+  {
+   "id": "air-quality",
+   "family": "sensors-switches",
+   "name": "Air quality",
+   "sort": 1
+  },
+  {
+   "id": "pressure",
+   "family": "sensors-switches",
+   "name": "Pressure (air & liquid)",
+   "sort": 2
+  },
+  {
+   "id": "level",
+   "family": "sensors-switches",
+   "name": "Level measuring",
+   "sort": 3
+  },
+  {
+   "id": "flow",
+   "family": "sensors-switches",
+   "name": "Flow (air & liquid)",
+   "sort": 4
+  }
+ ],
+ "features": [
+  {
+   "id": "th-indoor",
+   "type": "temp-humid",
+   "name": "Indoor",
+   "sort": 0
+  },
+  {
+   "id": "th-outdoor",
+   "type": "temp-humid",
+   "name": "Outdoor",
+   "sort": 1
+  },
+  {
+   "id": "th-wall",
+   "type": "temp-humid",
+   "name": "Wall-mounted",
+   "sort": 2
+  },
+  {
+   "id": "th-duct",
+   "type": "temp-humid",
+   "name": "Duct-mounted",
+   "sort": 3
+  },
+  {
+   "id": "th-water",
+   "type": "temp-humid",
+   "name": "Water / liquid",
+   "sort": 4
+  },
+  {
+   "id": "th-temp-rh",
+   "type": "temp-humid",
+   "name": "Temperature & humidity",
+   "sort": 5
+  },
+  {
+   "id": "th-temp-only",
+   "type": "temp-humid",
+   "name": "Temperature only",
+   "sort": 6
+  },
+  {
+   "id": "aq-indoor",
+   "type": "air-quality",
+   "name": "Indoor",
+   "sort": 7
+  },
+  {
+   "id": "aq-wall",
+   "type": "air-quality",
+   "name": "Wall-mounted",
+   "sort": 8
+  },
+  {
+   "id": "aq-duct",
+   "type": "air-quality",
+   "name": "Duct-mounted",
+   "sort": 9
+  },
+  {
+   "id": "aq-co2",
+   "type": "air-quality",
+   "name": "CO₂",
+   "sort": 10
+  },
+  {
+   "id": "aq-co",
+   "type": "air-quality",
+   "name": "CO",
+   "sort": 11
+  },
+  {
+   "id": "aq-dust",
+   "type": "air-quality",
+   "name": "Dust (PM2.5 / PM10)",
+   "sort": 12
+  },
+  {
+   "id": "aq-multi",
+   "type": "air-quality",
+   "name": "Multi-parameter",
+   "sort": 13
+  },
+  {
+   "id": "pr-switch",
+   "type": "pressure",
+   "name": "Switches",
+   "sort": 14
+  },
+  {
+   "id": "pr-sensor",
+   "type": "pressure",
+   "name": "Sensors / transmitters",
+   "sort": 15
+  },
+  {
+   "id": "pr-air",
+   "type": "pressure",
+   "name": "Air",
+   "sort": 16
+  },
+  {
+   "id": "pr-liquid",
+   "type": "pressure",
+   "name": "Liquid",
+   "sort": 17
+  }
+ ],
+ "models": [
+  {
+   "base": "TxAQ37",
+   "type": "air-quality",
+   "name": "All-In-One Air Quality Sensors",
+   "description": "TxAQ37 All-In-One Air Quality Sensor detects temperature, humidity, CO2, PM2.5, PM10, VOC, and formaldehyde—up to 7 parameters. It offers RS485 output with a built-in Modbus protocol for real-time, multi-point data detection. The indoor model can include a display screen and a three-color LED indicator to show air quality status. Both indoor and top suction types support RS485 communication configuration. With wide power supply options and protection features, it’s ideal for air quality monitoring in commercial complexes, offices, hotels, airports, and schools.",
+   "features": [
+    "aq-duct",
+    "aq-multi",
+    "aq-wall"
+   ],
+   "specs": [
+    {
+     "name": "Installation Method",
+     "options": [
+      {
+       "code": "1",
+       "label": "Indoor type"
+      },
+      {
+       "code": "2",
+       "label": "Top suction type"
+      }
+     ]
+    },
+    {
+     "name": "Temp & RH",
+     "options": [
+      {
+       "code": "1",
+       "label": "N/A"
+      },
+      {
+       "code": "2",
+       "label": "Temp & RH"
+      }
+     ]
+    },
+    {
+     "name": "CO2",
+     "options": [
+      {
+       "code": "1",
+       "label": "N/A"
+      },
+      {
+       "code": "2",
+       "label": "CO2"
+      }
+     ]
+    },
+    {
+     "name": "PM",
+     "options": [
+      {
+       "code": "1",
+       "label": "N/A"
+      },
+      {
+       "code": "2",
+       "label": "PM2.5&PM10"
+      }
+     ]
+    },
+    {
+     "name": "VOC",
+     "options": [
+      {
+       "code": "1",
+       "label": "N/A"
+      },
+      {
+       "code": "2",
+       "label": "VOC"
+      }
+     ]
+    },
+    {
+     "name": "Formaldehyde",
+     "options": [
+      {
+       "code": "1",
+       "label": "N/A"
+      },
+      {
+       "code": "2",
+       "label": "HCHO"
+      }
+     ]
+    },
+    {
+     "name": "Output",
+     "options": [
+      {
+       "code": "RSN",
+       "label": "Non-isolated RS485"
+      },
+      {
+       "code": "RS",
+       "label": "Isolation type of RS485"
+      }
+     ]
+    },
+    {
+     "name": "Display",
+     "options": [
+      {
+       "code": "1",
+       "label": "Without display"
+      },
+      {
+       "code": "2",
+       "label": "With display"
+      }
+     ]
+    },
+    {
+     "name": "Indication light",
+     "options": [
+      {
+       "code": "1",
+       "label": "None"
+      },
+      {
+       "code": "2",
+       "label": "With 3-color LED"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/09/TxAQ37-1.pdf-1.pdf",
+   "manual": null,
+   "image": "assets/img/products/Untitled-1_0007_Vector-Smart-Object-quwncbywwr91zie10cfxc7mbfs1lf7ntt0aziofiwg.jpg"
+  },
+  {
+   "base": "TxT93-XP",
+   "type": "temp-humid",
+   "name": "Room Temperature Sensor",
+   "description": "",
+   "features": [
+    "th-indoor",
+    "th-temp-only"
+   ],
+   "specs": [
+    {
+     "name": "Communication Options",
+     "options": [
+      {
+       "code": "1",
+       "label": "Modbus RS485"
+      },
+      {
+       "code": "2",
+       "label": "BACnet MS/TP"
+      }
+     ]
+    },
+    {
+     "name": "Interface Options",
+     "options": [
+      {
+       "code": "1",
+       "label": "No Interface"
+      },
+      {
+       "code": "2",
+       "label": "LCD Colour Display"
+      }
+     ]
+    },
+    {
+     "name": "Colour Options",
+     "options": [
+      {
+       "code": "B",
+       "label": "Black"
+      },
+      {
+       "code": "W",
+       "label": "White"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": null,
+   "manual": null,
+   "image": null
+  },
+  {
+   "base": "TxTHV94-XP",
+   "type": "temp-humid",
+   "name": "Room VOC, Humidity and Temperature Sensor",
+   "description": "",
+   "features": [
+    "th-indoor",
+    "th-temp-rh"
+   ],
+   "specs": [
+    {
+     "name": "Communication Options",
+     "options": [
+      {
+       "code": "1",
+       "label": "Modbus RS485"
+      },
+      {
+       "code": "2",
+       "label": "BACnet MS/TP"
+      }
+     ]
+    },
+    {
+     "name": "Interface Options",
+     "options": [
+      {
+       "code": "1",
+       "label": "No Interface"
+      },
+      {
+       "code": "2",
+       "label": "Colour Display"
+      }
+     ]
+    },
+    {
+     "name": "Colour Options",
+     "options": [
+      {
+       "code": "B",
+       "label": "Black"
+      },
+      {
+       "code": "W",
+       "label": "White"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": null,
+   "manual": null,
+   "image": null
+  },
+  {
+   "base": "TxTH91-XP",
+   "type": "temp-humid",
+   "name": "Room Humidity and Temperature Sensor",
+   "description": "The TxTH91-XP Sensors specialized in monitoring and controlling temperature and humidity levels within indoor environments. With a contemporary design, they can be easily mounted on walls or standard wall boxes. Optional color displays with durable glass fronts are available, and they support communication via Modbus or BACnet protocols.",
+   "features": [
+    "th-indoor",
+    "th-temp-rh"
+   ],
+   "specs": [
+    {
+     "name": "Communication Options",
+     "options": [
+      {
+       "code": "1",
+       "label": "MOD Modbus RS485"
+      },
+      {
+       "code": "2",
+       "label": "BAC BACnet MS/TP"
+      }
+     ]
+    },
+    {
+     "name": "Interface Options",
+     "options": [
+      {
+       "code": "1",
+       "label": "No Interface"
+      },
+      {
+       "code": "2",
+       "label": "Color Display"
+      }
+     ]
+    },
+    {
+     "name": "Color Option",
+     "options": [
+      {
+       "code": "B",
+       "label": "Black"
+      },
+      {
+       "code": "W",
+       "label": "White"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/07/TxTH91-XP-6.pdf",
+   "manual": "https://neowave.tech/wp-content/uploads/2024/07/TxTH91-XP-User-Manual-1.pdf",
+   "image": "assets/img/products/91-IMAGE-r7kw8tpqevknnb8qsia3dlna3mw68zr26x6pij86eo.png"
+  },
+  {
+   "base": "TxTCD92-XP",
+   "type": "air-quality",
+   "name": "Room CO2 and Temperature Sensor",
+   "description": "",
+   "features": [
+    "aq-co2",
+    "aq-indoor"
+   ],
+   "specs": [
+    {
+     "name": "Communication Options",
+     "options": [
+      {
+       "code": "1",
+       "label": "Modbus RS485"
+      },
+      {
+       "code": "2",
+       "label": "BACnet MS/TP"
+      }
+     ]
+    },
+    {
+     "name": "Interface Options",
+     "options": [
+      {
+       "code": "1",
+       "label": "No Interface"
+      },
+      {
+       "code": "2",
+       "label": "Colour Display"
+      }
+     ]
+    },
+    {
+     "name": "Colour Options",
+     "options": [
+      {
+       "code": "B",
+       "label": "Black"
+      },
+      {
+       "code": "W",
+       "label": "White"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": null,
+   "manual": null,
+   "image": null
+  },
+  {
+   "base": "AQS820",
+   "type": "air-quality",
+   "name": "Multi-in-one Air Quality Sensor",
+   "description": "NeoWave AQS820 is a compact air quality monitoring device integrating one to 11 sensor types, offering various sensor combinations to suit diverse application needs. With dedicated probes for each parameter, it ensures accurate measurements and includes external temperature and humidity sensors. A real-time display screen provides continuous environmental updates. Its compact design ensures minimal space usage without compromising functionality, performance stability, or cost efficiency. The AQS820 is ideal for environmental quality monitoring and IoT-based gas detection applications.",
+   "features": [
+    "aq-multi"
+   ],
+   "specs": [
+    {
+     "name": "Output",
+     "options": [
+      {
+       "code": "V5",
+       "label": "0-5V"
+      },
+      {
+       "code": "V10",
+       "label": "0-10V"
+      },
+      {
+       "code": "A",
+       "label": "4-20mA"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/11/AQS820-1.pdf",
+   "manual": null,
+   "image": "assets/img/products/Screenshot-2024-11-08-140820-qwuc1btlzaxn0xq2jmuxb1i2vas6otzu0u2qx4g9rk.png"
+  },
+  {
+   "base": "AQS117",
+   "type": "air-quality",
+   "name": "Smart Air Quality Controller",
+   "description": "The AQS117 is an intelligent air quality controller with integrated environmental sensors (PM2.5, CO₂,formaldehyde, TVOC, temperature, humidity). It supportsRS485 (Modbus RTU) and controls 3-speed fans & dampers, ideal for smart buildings, offices, and industrial spaces.",
+   "features": [
+    "aq-multi",
+    "aq-wall"
+   ],
+   "specs": [],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2025/05/AQS117.pdf",
+   "manual": null,
+   "image": "assets/img/products/AQS117-r64wno2clhbposbm2czvpzpu5kbo3h3xcyha1s0c4w.png"
+  },
+  {
+   "base": "TxCDT380",
+   "type": "air-quality",
+   "name": "Carbon Dioxide (CO2)/Temperature Sensor",
+   "description": "The TxCDT380 series CO₂ & temperature sensors by NeoWave Co. are advanced, all-in-one devices designed for precise monitoring and control of indoor air quality (IAQ) and temperature. Available in wall-mount (TxCDT380W) and duct-mount (TxCDT380D) versions, these sensors integrate high-performance NDIR technology for accurate CO₂ measurement and temperature compensation, ensuring long-term reliability and minimal maintenance",
+   "features": [
+    "aq-co2",
+    "aq-duct",
+    "aq-wall"
+   ],
+   "specs": [
+    {
+     "name": "Model",
+     "options": [
+      {
+       "code": "W",
+       "label": "Wall -Room CO2 / Temp. Sensor"
+      },
+      {
+       "code": "D",
+       "label": "Duct mount CO2 /Temp. Sensor"
+      }
+     ]
+    },
+    {
+     "name": "CO2 Output",
+     "options": [
+      {
+       "code": "VA",
+       "label": "4~20mA/0~10VDC"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    },
+    {
+     "name": "Temp. Output",
+     "options": [
+      {
+       "code": "VA",
+       "label": "4~20mA / 0~10VDC"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      },
+      {
+       "code": "1",
+       "label": "PT1000, ±0.2°C @25°C"
+      },
+      {
+       "code": "2",
+       "label": "PT100, ±0.2°C @25°C"
+      },
+      {
+       "code": "3",
+       "label": "NTC20K, ±0.2°C @25°C"
+      },
+      {
+       "code": "4",
+       "label": "Ni1000, ±0.5°C @25°C"
+      },
+      {
+       "code": "5",
+       "label": "NTC10K-II, ±0.2°C @25°C"
+      },
+      {
+       "code": "6",
+       "label": "NTC10K-III, ±0.3°C @25°C"
+      },
+      {
+       "code": "7",
+       "label": "NTC10K-A, ±0.3°C @25°C"
+      }
+     ]
+    },
+    {
+     "name": "Display (TxCDT380W)",
+     "options": [
+      {
+       "code": "1",
+       "label": "N/A"
+      },
+      {
+       "code": "2",
+       "label": "LCD"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/03/TxCDT380WD-1.pdf",
+   "manual": null,
+   "image": "assets/img/products/380-rip59cznfqcv2qwvu1iin9s0i3omt4786zucfh6rg0.png"
+  },
+  {
+   "base": "TxDI36",
+   "type": "air-quality",
+   "name": "Room Dust PM2.5&PM10 Sensor/Controller",
+   "description": "NeoWave TxDI36 PM2.5/PM10 Indoor Dust Sensor A laser-based sensor that detects particle sizes from 0.3 to 10μm (PM2.5/PM10) with high accuracy, fast response, and long-term reliability. Features overvoltage & reverse polarity protection, multiple output options (current, voltage, RS485), and an optional relay output for alarms/control. The six-color LED screen visually indicates air quality levels, while the compact design allows for easy wall-mount installation",
+   "features": [
+    "aq-dust",
+    "aq-indoor"
+   ],
+   "specs": [
+    {
+     "name": "Type",
+     "options": [
+      {
+       "code": "AV2",
+       "label": "4~20mA&0~10V@PM2.5"
+      },
+      {
+       "code": "AV10",
+       "label": "4~20mA&0~10V@PM10"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    },
+    {
+     "name": "Display Button",
+     "options": [
+      {
+       "code": "1",
+       "label": "Without display button"
+      },
+      {
+       "code": "2",
+       "label": "With display button"
+      }
+     ]
+    },
+    {
+     "name": "Relay & buzzer (optional when equipped with display button)",
+     "options": [
+      {
+       "code": "1",
+       "label": "No"
+      },
+      {
+       "code": "2",
+       "label": "1xSPDT"
+      },
+      {
+       "code": "3",
+       "label": "1xSPDT+1xbuzzer"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2025/03/TxDI36-1.pdf",
+   "manual": null,
+   "image": "assets/img/products/36-rip5oeeosay0u52g0jjmjh5io1k1yrwm9fm0uuvzw0.png"
+  },
+  {
+   "base": "TxCOI32",
+   "type": "air-quality",
+   "name": "Room Carbon Monoxide Sensor",
+   "description": "The TxCOI32 is a high-performance CO sensor with electrochemical detection for fast response, stable readings, and high accuracy. Features wide voltage input, overvoltage/reverse polarity protection, and configurable relay output for alarms. Supports current/voltage or RS485 output.",
+   "features": [
+    "aq-co",
+    "aq-indoor"
+   ],
+   "specs": [
+    {
+     "name": "Range",
+     "options": [
+      {
+       "code": "1",
+       "label": "100ppm"
+      },
+      {
+       "code": "2",
+       "label": "250ppm"
+      },
+      {
+       "code": "4",
+       "label": "400ppm"
+      }
+     ]
+    },
+    {
+     "name": "Output",
+     "options": [
+      {
+       "code": "AV",
+       "label": "4-20mA &0~10V"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    },
+    {
+     "name": "Display",
+     "options": [
+      {
+       "code": "1",
+       "label": "Without Display"
+      },
+      {
+       "code": "2",
+       "label": "With Display"
+      }
+     ]
+    },
+    {
+     "name": "Relay",
+     "options": [
+      {
+       "code": "1",
+       "label": "No relay"
+      },
+      {
+       "code": "2",
+       "label": "1xSPDT"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/11/TxCOI32-3.pdf",
+   "manual": "https://neowave.tech/wp-content/uploads/2024/11/TxCOI32-User-Manual.pdf.pdf",
+   "image": "assets/img/products/32-rip5iw2qq9eisf2j6ntcfd79bqplun1965yklh22cw.png"
+  },
+  {
+   "base": "TxCOW31",
+   "type": "air-quality",
+   "name": "Wall-mounted Carbon Monoxide Sensor",
+   "description": "The TxCOW31 Wall-mounted Carbon Monoxide Sensor uses electrochemical technology to detect CO in the air, offering high selectivity and stability. It features three output options: current, voltage, and RS485, with wide voltage input and reverse polarity protection",
+   "features": [
+    "aq-co",
+    "aq-wall"
+   ],
+   "specs": [
+    {
+     "name": "Range",
+     "options": [
+      {
+       "code": "1",
+       "label": "500ppm"
+      },
+      {
+       "code": "2",
+       "label": "1000ppm"
+      }
+     ]
+    },
+    {
+     "name": "Output",
+     "options": [
+      {
+       "code": "V5",
+       "label": "0-5V"
+      },
+      {
+       "code": "V10",
+       "label": "0-10V"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/02/TxCOW31-1.pdf",
+   "manual": "https://neowave.tech/wp-content/uploads/2024/02/TxCOW31-User-Manual.pdf.pdf",
+   "image": "assets/img/products/2-2-qk4n9u57sotyvysfpyak8a67mk4o1x1vy50k2nvf5c-qx16pj8mph9m2sq9dni53nhuubdliispxrvq4joju8.jpg"
+  },
+  {
+   "base": "TxCDI35",
+   "type": "air-quality",
+   "name": "Room Carbon Dioxide Sensor",
+   "description": "The TxCDI35 measures CO2 concentration using NDIR (Non-Dispersive Infrared) technology, which detects gas levels based on infrared light absorption. This method ensures long life, stability, and high accuracy compared to electrochemical sensors. Featuring an imported high-performance NDIR sensor, it offers fast response, reliable performance, and a compact design for easy installation",
+   "features": [
+    "aq-co2",
+    "aq-indoor"
+   ],
+   "specs": [
+    {
+     "name": "Range",
+     "options": [
+      {
+       "code": "2",
+       "label": "2000ppm"
+      },
+      {
+       "code": "5",
+       "label": "5000ppm"
+      }
+     ]
+    },
+    {
+     "name": "Output",
+     "options": [
+      {
+       "code": "V5",
+       "label": "0~5V"
+      },
+      {
+       "code": "V10",
+       "label": "0~10V"
+      },
+      {
+       "code": "A",
+       "label": "4-20mA"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    },
+    {
+     "name": "Display",
+     "options": [
+      {
+       "code": "1",
+       "label": "Without Display"
+      },
+      {
+       "code": "2",
+       "label": "With Display"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/02/TxCDI35-1.pdf",
+   "manual": "https://neowave.tech/wp-content/uploads/2024/02/TxCDI35USER-MANUAL.pdf",
+   "image": "assets/img/products/3-1-qk4mzlohdmtkgtnnhj0t2v5iriks8kf3vha7y71qwg-qx16v2ieycueg4ot21n1s97ks03eucrtd66nv7h374.jpg"
+  },
+  {
+   "base": "TxCDD34",
+   "type": "air-quality",
+   "name": "Duct Carbon Dioxide Sensor",
+   "description": "The TxCDD34 uses advanced NDIR technology to accurately measure CO₂ levels through infrared light absorption, offering superior longevity and stability compared to electrochemical sensors. Featuring an industrial-grade design with wide voltage input and robust housing for harsh environments",
+   "features": [
+    "aq-co2",
+    "aq-duct"
+   ],
+   "specs": [
+    {
+     "name": "Range",
+     "options": [
+      {
+       "code": "2",
+       "label": "2000ppm"
+      },
+      {
+       "code": "5",
+       "label": "5000ppm"
+      }
+     ]
+    },
+    {
+     "name": "Output",
+     "options": [
+      {
+       "code": "V5",
+       "label": "0~5V"
+      },
+      {
+       "code": "V10",
+       "label": "0~10V"
+      },
+      {
+       "code": "A",
+       "label": "4-20mA"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/02/TxCDD34-1.pdf",
+   "manual": null,
+   "image": "assets/img/products/4-qk4me43b4zel1qvbyqmuksd5vehp9o40l4dlzgwr5c-qx1x00u4hsxsrdwgjs04tt54ny96aiajegj0t0baeo.jpg"
+  },
+  {
+   "base": "TxCDW33",
+   "type": "air-quality",
+   "name": "Wall-mounted Carbon Dioxide Sensor",
+   "description": "",
+   "features": [
+    "aq-co2",
+    "aq-wall"
+   ],
+   "specs": [
+    {
+     "name": "Range",
+     "options": [
+      {
+       "code": "2",
+       "label": "2000ppm"
+      },
+      {
+       "code": "5",
+       "label": "5000ppm"
+      },
+      {
+       "code": "8",
+       "label": "10000ppm"
+      }
+     ]
+    },
+    {
+     "name": "Output",
+     "options": [
+      {
+       "code": "AV5",
+       "label": "4-20mA &0~5V"
+      },
+      {
+       "code": "AV10",
+       "label": "4-20mA &0~10V"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    },
+    {
+     "name": "Cable Outlet",
+     "options": [
+      {
+       "code": "S",
+       "label": "Side outlet"
+      },
+      {
+       "code": "R",
+       "label": "Rear outlet"
+      }
+     ]
+    },
+    {
+     "name": "Outlet Form",
+     "options": [
+      {
+       "code": "T",
+       "label": "Terminal outlet"
+      },
+      {
+       "code": "D",
+       "label": "Direct outlet"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/02/Wall-Mounted-CO2-Monitor-Transmitter.pdf",
+   "manual": null,
+   "image": null
+  },
+  {
+   "base": "TxTL93",
+   "type": "temp-humid",
+   "name": "Liquid Temperature and Level 2 in 1 Sensor",
+   "description": "The NeoWave TxTL93 liquid temperature and level 2-in-1 sensor uses advanced piezoresistive pressure and PT-100 temperature sensors. It converts signals into standard outputs with digital temperature compensation, a wide operating range, and reliable performance. Designed for liquid level and temperature monitoring in various systems.",
+   "features": [
+    "th-temp-only",
+    "th-water"
+   ],
+   "specs": [
+    {
+     "name": "Output Mode",
+     "options": [
+      {
+       "code": "A",
+       "label": "(4~20) mA"
+      },
+      {
+       "code": "V0",
+       "label": "0.5 ~ 4.5V"
+      },
+      {
+       "code": "RS",
+       "label": "RS485"
+      }
+     ]
+    },
+    {
+     "name": "Unit",
+     "options": [
+      {
+       "code": "M",
+       "label": "Meter"
+      },
+      {
+       "code": "CM",
+       "label": "Centimeter"
+      }
+     ]
+    },
+    {
+     "name": "Accuracy",
+     "options": [
+      {
+       "code": ".5",
+       "label": "0.5% F.S."
+      }
+     ]
+    },
+    {
+     "name": "Electrical Connection",
+     "options": [
+      {
+       "code": "M",
+       "label": "M12 waterproof outlet"
+      }
+     ]
+    },
+    {
+     "name": "Cable Length",
+     "options": [
+      {
+       "code": "1",
+       "label": "1m"
+      },
+      {
+       "code": "2",
+       "label": "2m"
+      },
+      {
+       "code": "3",
+       "label": "3m"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/02/TxTL93.pdf",
+   "manual": null,
+   "image": "assets/img/products/23-qkgld0dhrm4ndam7v50kjnohhnjgft6ccqb1bctfu8-qx148ag9tr3jrmd0i2rbd68cfb90p2i6c223ss06ls.png"
+  },
+  {
+   "base": "TxTHH99",
+   "type": "temp-humid",
+   "name": "High-temperature Temperature& Humidity Sensor",
+   "description": "TxTHH99 sensor ensures high-precision temperature and humidity measurement for industrial and climate control applications. Its split probe withstands up to 180°C, offering long-term stability, anti-pollution, and strong EMI resistance. The durable metal design enhances reliability in harsh conditions",
+   "features": [
+    "th-indoor",
+    "th-temp-rh"
+   ],
+   "specs": [
+    {
+     "name": "Humidity Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(2-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(2-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2025/03/TxTHH99.pdf",
+   "manual": null,
+   "image": "assets/img/products/TxTHH99-image-r7kpskrbrjn4zulhym7lspi659m9daqn9eapq9l1tc.png"
+  },
+  {
+   "base": "TxTHAC95",
+   "type": "temp-humid",
+   "name": "High Accuracy Temperature & Humidity Sensor",
+   "description": "TxTHAC95 sensor features a high-precision digital core with an integrated structure for strong anti-interference. Factory-calibrated for accuracy, it’s ideal for smart buildings, incubators, industrial dehumidifiers, and more",
+   "features": [
+    "th-indoor",
+    "th-temp-rh"
+   ],
+   "specs": [
+    {
+     "name": "Model",
+     "options": [
+      {
+       "code": "W",
+       "label": "Wall-mounted"
+      },
+      {
+       "code": "D",
+       "label": "Duct"
+      },
+      {
+       "code": "S",
+       "label": "Split"
+      }
+     ]
+    },
+    {
+     "name": "Accuracy Range",
+     "options": [
+      {
+       "code": "2",
+       "label": "±2%RH(0.3℃)"
+      }
+     ]
+    },
+    {
+     "name": "Humidity Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(2-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(2-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      },
+      {
+       "code": "1",
+       "label": "Pt100, ±0.2°C@0°C"
+      },
+      {
+       "code": "2",
+       "label": "Pt1000, ±0.2°C@0°C"
+      },
+      {
+       "code": "3",
+       "label": "NTC10K, ±0.4℃@25℃"
+      },
+      {
+       "code": "4",
+       "label": "NTC20K, ±0.4℃@25℃"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Range",
+     "options": [
+      {
+       "code": "1",
+       "label": "NO"
+      },
+      {
+       "code": "2",
+       "label": "0~50°C"
+      },
+      {
+       "code": "3",
+       "label": "-20~60°C"
+      },
+      {
+       "code": "9",
+       "label": "Others (customized)"
+      }
+     ]
+    },
+    {
+     "name": "Display Mode",
+     "options": [
+      {
+       "code": "1",
+       "label": "Without Display"
+      },
+      {
+       "code": "2",
+       "label": "With Display"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2025/03/TxTHAC95.pdf",
+   "manual": null,
+   "image": "assets/img/products/TxTHAC95-image-r7ksv8bcbf4br9v5tg4ibs9no87tik13532hkxilbk.png"
+  },
+  {
+   "base": "TxTA03",
+   "type": "temp-humid",
+   "name": "Armored Temperature Sensor",
+   "description": "TxTA03 temperature sensor uses high-precision platinum resistance with a 304 stainless steel probe, ensuring durability and corrosion resistance. It offers multiple installation options and suits various industries, including petroleum, chemical, HVAC, and hydrology",
+   "features": [
+    "th-temp-rh",
+    "th-water"
+   ],
+   "specs": [
+    {
+     "name": "Temperature Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(2-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      },
+      {
+       "code": "1",
+       "label": "Pt100, ±0.2°C@0°C"
+      },
+      {
+       "code": "2",
+       "label": "Pt1000, ±0.2°C@0°C"
+      }
+     ]
+    },
+    {
+     "name": "Accuracy",
+     "options": [
+      {
+       "code": "25",
+       "label": "0.25%FS"
+      },
+      {
+       "code": "50",
+       "label": "0.5%FS"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Range",
+     "options": [
+      {
+       "code": "1",
+       "label": "0~100℃"
+      },
+      {
+       "code": "2",
+       "label": "0~200℃ (with cold end)"
+      },
+      {
+       "code": "3",
+       "label": "0~300℃ (with cold end)"
+      },
+      {
+       "code": "4",
+       "label": "-50~150℃ (with cold end)"
+      },
+      {
+       "code": "5",
+       "label": "-50~300℃ (with cold end)"
+      },
+      {
+       "code": "9",
+       "label": "customized (-50~300℃)"
+      }
+     ]
+    },
+    {
+     "name": "Wiring Box",
+     "options": [
+      {
+       "code": "1",
+       "label": "Wiring Box"
+      }
+     ]
+    },
+    {
+     "name": "Installation Method",
+     "options": [
+      {
+       "code": "G2",
+       "label": "G1/2 male (fixed thread installation)"
+      },
+      {
+       "code": "G4",
+       "label": "G1/4 male (fixed thread installation)"
+      },
+      {
+       "code": "M",
+       "label": "M16*1.5 male (fixed thread installation)"
+      },
+      {
+       "code": "M2",
+       "label": "M20*1.5 male (fixed thread installation)"
+      },
+      {
+       "code": "M7",
+       "label": "M27*2 male (fixed thread installation)"
+      },
+      {
+       "code": "C",
+       "label": "Clamp (50.5MM)"
+      },
+      {
+       "code": "D",
+       "label": "Direct Insert Type"
+      }
+     ]
+    },
+    {
+     "name": "Protective Tube",
+     "options": [
+      {
+       "code": "1",
+       "label": "Without"
+      },
+      {
+       "code": "2",
+       "label": "With"
+      }
+     ]
+    },
+    {
+     "name": "Probe length (without thread)",
+     "options": [
+      {
+       "code": "1",
+       "label": "30mm (Sleeved Type)"
+      },
+      {
+       "code": "2",
+       "label": "50mm (Sleeved Type)"
+      },
+      {
+       "code": "3",
+       "label": "100mm (Sleeved Type)"
+      },
+      {
+       "code": "4",
+       "label": "150mm (Sleeved Type)"
+      },
+      {
+       "code": "5",
+       "label": "200mm (Sleeved Type)"
+      },
+      {
+       "code": "6",
+       "label": "300mm (Sleeved Type)"
+      },
+      {
+       "code": "9",
+       "label": "customized (Sleeved Type)"
+      },
+      {
+       "code": "1D",
+       "label": "130mm (Direct Insert Type)"
+      },
+      {
+       "code": "2D",
+       "label": "200mm (Direct Insert Type)"
+      },
+      {
+       "code": "3D",
+       "label": "250mm (Direct Insert Type)"
+      },
+      {
+       "code": "4D",
+       "label": "300mm (Direct Insert Type)"
+      },
+      {
+       "code": "5D",
+       "label": "400mm (Direct Insert Type)"
+      },
+      {
+       "code": "9D",
+       "label": "customized (Direct Insert Type)"
+      }
+     ]
+    },
+    {
+     "name": "Code End",
+     "options": [
+      {
+       "code": "1",
+       "label": "Without cold end (15mm)"
+      },
+      {
+       "code": "2",
+       "label": "Cold end length 100mm)"
+      },
+      {
+       "code": "9",
+       "label": "Customized"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2025/03/TxTA03-2.pdf",
+   "manual": null,
+   "image": "assets/img/products/TxA03-image-r7kt2q30svdmbczb26qfpe6y5ta5vos1u6aubcelps.png"
+  },
+  {
+   "base": "TxTI04",
+   "type": "temp-humid",
+   "name": "Integrated Temperature Sensor",
+   "description": "TxTI04 Integrated Temperature Sensor byNeoWave utilizes a high-resolution, high-precision temperature sensor as its measuring element. The amplifier circuit, housed in a 304 stainless steel enclosure, converts the sensor signal into an analog output. This robust stainless steel temperature sensor is ideal for various industrial applications.",
+   "features": [
+    "th-indoor",
+    "th-temp-rh"
+   ],
+   "specs": [
+    {
+     "name": "Temperature Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(2-wire)"
+      },
+      {
+       "code": "1",
+       "label": "Pt100, ±0.2°C@0°C"
+      },
+      {
+       "code": "2",
+       "label": "Pt1000, ±0.2°C@0°C"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Range",
+     "options": [
+      {
+       "code": "1",
+       "label": "0~100℃"
+      },
+      {
+       "code": "2",
+       "label": "0-200°C"
+      },
+      {
+       "code": "3",
+       "label": "-50-50°C"
+      },
+      {
+       "code": "4",
+       "label": "-50-100°C"
+      },
+      {
+       "code": "5",
+       "label": "-50-200°C"
+      },
+      {
+       "code": "9",
+       "label": "customized (-50-200°C)"
+      }
+     ]
+    },
+    {
+     "name": "Installation Method",
+     "options": [
+      {
+       "code": "G2",
+       "label": "G1/2 male (fixed thread installation)"
+      },
+      {
+       "code": "G4",
+       "label": "G1/4 male (fixed thread installation)"
+      },
+      {
+       "code": "M",
+       "label": "M20-1.5 male (fixed thread installation)"
+      },
+      {
+       "code": "C",
+       "label": "clamp (50.5MM)"
+      },
+      {
+       "code": "D",
+       "label": "Direct Insert Type"
+      }
+     ]
+    },
+    {
+     "name": "Protective Tube",
+     "options": [
+      {
+       "code": "1",
+       "label": "without"
+      },
+      {
+       "code": "2",
+       "label": "with"
+      }
+     ]
+    },
+    {
+     "name": "Probe Length",
+     "options": [
+      {
+       "code": "1",
+       "label": "30mm (Integrated Type)"
+      },
+      {
+       "code": "2",
+       "label": "50mm (Integrated Type)"
+      },
+      {
+       "code": "3",
+       "label": "100mm (Integrated Type)"
+      },
+      {
+       "code": "4",
+       "label": "150mm (Integrated Type)"
+      },
+      {
+       "code": "5",
+       "label": "200mm (Integrated Type)"
+      },
+      {
+       "code": "6",
+       "label": "300mm (Integrated Type)"
+      },
+      {
+       "code": "9",
+       "label": "customized (Integrated Type)"
+      },
+      {
+       "code": "1D",
+       "label": "130mm (Direct Insert Type)"
+      },
+      {
+       "code": "2D",
+       "label": "200mm (Direct Insert Type)"
+      },
+      {
+       "code": "3D",
+       "label": "250mm (Direct Insert Type)"
+      },
+      {
+       "code": "4D",
+       "label": "300mm (Direct Insert Type)"
+      },
+      {
+       "code": "5D",
+       "label": "400mm (Direct Insert Type)"
+      },
+      {
+       "code": "9D",
+       "label": "customized (Direct Insert Type)"
+      }
+     ]
+    },
+    {
+     "name": "Display",
+     "options": [
+      {
+       "code": "1",
+       "label": "Without Display"
+      },
+      {
+       "code": "2",
+       "label": "With Display"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2025/03/TxTI04-2.pdf",
+   "manual": null,
+   "image": "assets/img/products/TxTI04-image-r7kt7z0kykk94zcveyeg4kilk9exuum3k5ffrymgz4.png"
+  },
+  {
+   "base": "TxTHM98",
+   "type": "temp-humid",
+   "name": "Magnetic Temperature & Humidity Sensor",
+   "description": "The NeoWave TxTHM96 series temperature and humidity sensor uses a high-precision temperature and humidity sensor with high accuracy, fast response, and excellent long-term stability. The back of the device has four strong magnets, allowing it to be directly attached to cabinets or wall-mounted, significantly improving installation efficiency. It can display temperature, humidity, and address.",
+   "features": [
+    "th-indoor",
+    "th-temp-rh"
+   ],
+   "specs": [
+    {
+     "name": "Display",
+     "options": [
+      {
+       "code": "1",
+       "label": "Without Display"
+      },
+      {
+       "code": "2",
+       "label": "With Display"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2025/03/TxTHM98.pdf",
+   "manual": "https://neowave.tech/wp-content/uploads/2025/03/TxTHM98-manual-Neutral-1.pdf",
+   "image": "assets/img/products/TxTHM98-image-r7ktyxzv2fhga66gx44269hr7ah3q6otlnc0ismsfk.png"
+  },
+  {
+   "base": "CTH27",
+   "type": "temp-humid",
+   "name": "Indoor Temperature Humidity Controller",
+   "description": "The CTH21 series is a compact and efficient solution designed for indoor temperature and humidity detection and control. It combines advanced engineering with user-friendly features, making it ideal for environments requiring precise monitoring and management of temperature and humidity levels.",
+   "features": [
+    "th-indoor",
+    "th-temp-rh",
+    "th-wall"
+   ],
+   "specs": [
+    {
+     "name": "Accuracy Range",
+     "options": [
+      {
+       "code": "3",
+       "label": "±3%RH(±0.5°C)"
+      }
+     ]
+    },
+    {
+     "name": "Humidity Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      },
+      {
+       "code": "1",
+       "label": "Pt100, ±0.2°C@0°C"
+      },
+      {
+       "code": "2",
+       "label": "Pt1000, ±0.2°C@0°C"
+      },
+      {
+       "code": "3",
+       "label": "NTC10K, ±0.4°C@25°C"
+      },
+      {
+       "code": "4",
+       "label": "NTC20K, ±0.4°C@25°C"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Range",
+     "options": [
+      {
+       "code": "1",
+       "label": "NO"
+      },
+      {
+       "code": "2",
+       "label": "0~50°C"
+      },
+      {
+       "code": "3",
+       "label": "-20~60°C"
+      },
+      {
+       "code": "9",
+       "label": "Others (customized)"
+      }
+     ]
+    },
+    {
+     "name": "Display",
+     "options": [
+      {
+       "code": "2",
+       "label": "Setting button, backlight LCD display with unit"
+      }
+     ]
+    },
+    {
+     "name": "Alarm and relay",
+     "options": [
+      {
+       "code": "1",
+       "label": "Alarm only"
+      },
+      {
+       "code": "2",
+       "label": "Relay only"
+      },
+      {
+       "code": "3",
+       "label": "Alarm and relay"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2025/02/CTH27-1.pdf",
+   "manual": null,
+   "image": "assets/img/products/Untitled-1_0007_Vector-Smart-Object-quwncbywwr91zie10cfxc7mbfs1lf7ntt0aziofiwg.jpg"
+  },
+  {
+   "base": "TxTHO23",
+   "type": "temp-humid",
+   "name": "Outdoor Temperature And Humidity Sensor",
+   "description": "The TxTHO23 is a specialized sensor designed for outdoor temperature and humidity monitoring.Equipped with a standard radiation shield, it offers protection against wind and rain, ensuring optimal performance even in harsh weather conditions.The sensor provides three output options: current,voltage, and RS485, making it versatile for various applications. It is ideal for use in environments such as construction sites, weather monitoring systems, and other outdoor settings.",
+   "features": [
+    "th-outdoor",
+    "th-temp-rh",
+    "th-wall"
+   ],
+   "specs": [
+    {
+     "name": "Accuracy Range",
+     "options": [
+      {
+       "code": "3",
+       "label": "±3%RH(±0.5°C)"
+      }
+     ]
+    },
+    {
+     "name": "Humidity Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(2-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(2-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      },
+      {
+       "code": "1",
+       "label": "Pt100, ±0.2°C@0°C"
+      },
+      {
+       "code": "2",
+       "label": "Pt1000, ±0.2°C@0°C"
+      },
+      {
+       "code": "3",
+       "label": "NTC10K, ±0.4°C@25°C"
+      },
+      {
+       "code": "4",
+       "label": "NTC20K, ±0.4°C@25°C"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Range",
+     "options": [
+      {
+       "code": "1",
+       "label": "NO"
+      },
+      {
+       "code": "2",
+       "label": "0~50°C"
+      },
+      {
+       "code": "3",
+       "label": "-20~60°C"
+      },
+      {
+       "code": "9",
+       "label": "Others (customized)"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/09/TxTHO23.pdf",
+   "manual": null,
+   "image": "assets/img/products/Untitled-1_0000_Vector-Smart-Object-quwnnl3cqcnmzg1kapk4ovdzgukskrc50ph9cxqueo.jpg"
+  },
+  {
+   "base": "TxTH29",
+   "type": "temp-humid",
+   "name": "Temperature & Humidity Sensor",
+   "description": "The TxTH29 series temperature and humidity sensor is designed for industrial use, offering wall-mounted, pipeline, and split installation options. It supports current, voltage, and RS485output modes, ensuring flexibility. With easy installation and strong adaptability, it is ideal ford ata centers, HVAC systems, buildings,greenhouses, farms, and other environments requiring precise monitoring.",
+   "features": [
+    "th-duct",
+    "th-indoor",
+    "th-temp-rh",
+    "th-wall"
+   ],
+   "specs": [
+    {
+     "name": "Model",
+     "options": [
+      {
+       "code": "W",
+       "label": "Wall-mounted"
+      },
+      {
+       "code": "D",
+       "label": "Duct"
+      },
+      {
+       "code": "S",
+       "label": "Split"
+      }
+     ]
+    },
+    {
+     "name": "Accuracy Range",
+     "options": [
+      {
+       "code": "3",
+       "label": "±3%RH(±0.5°C)"
+      }
+     ]
+    },
+    {
+     "name": "Humidity Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(2-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(2-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      },
+      {
+       "code": "1",
+       "label": "Pt100, ±0.2°C@0°C"
+      },
+      {
+       "code": "2",
+       "label": "Pt1000, ±0.2°C@0°C"
+      },
+      {
+       "code": "3",
+       "label": "NTC10K, ±0.4℃@25℃"
+      },
+      {
+       "code": "4",
+       "label": "NTC20K, ±0.4℃@25℃"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Range",
+     "options": [
+      {
+       "code": "1",
+       "label": "NO"
+      },
+      {
+       "code": "2",
+       "label": "0~50°C"
+      },
+      {
+       "code": "3",
+       "label": "-20~60°C"
+      },
+      {
+       "code": "9",
+       "label": "Others (customized)"
+      }
+     ]
+    },
+    {
+     "name": "Display",
+     "options": [
+      {
+       "code": "1",
+       "label": "No display"
+      },
+      {
+       "code": "2",
+       "label": "LCD display"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/09/TxTH29.pdf",
+   "manual": null,
+   "image": "assets/img/products/Untitled-1_0003_Layer-4-quwnu8s753rr80def35zuowiy3re3kroxnu2qhvgc0.jpg"
+  },
+  {
+   "base": "TxTH05",
+   "type": "temp-humid",
+   "name": "Temperature and Humidity Sensor – Duct & Wall",
+   "description": "",
+   "features": [
+    "th-duct",
+    "th-temp-rh",
+    "th-wall"
+   ],
+   "specs": [
+    {
+     "name": "Model",
+     "options": [
+      {
+       "code": "W",
+       "label": "Wall-mounted"
+      },
+      {
+       "code": "D",
+       "label": "Duct"
+      },
+      {
+       "code": "S",
+       "label": "Split"
+      }
+     ]
+    },
+    {
+     "name": "Accuracy Range",
+     "options": [
+      {
+       "code": "2",
+       "label": "±2%RH(0.3℃)"
+      },
+      {
+       "code": "3",
+       "label": "±3%RH(0.3℃)"
+      }
+     ]
+    },
+    {
+     "name": "Humidity Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(2-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(2-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      },
+      {
+       "code": "1",
+       "label": "Pt100, ±0.2°C@0°C"
+      },
+      {
+       "code": "2",
+       "label": "Pt1000, ±0.2°C@0°C"
+      },
+      {
+       "code": "3",
+       "label": "NTC20K, ±0.4℃@25℃"
+      },
+      {
+       "code": "4",
+       "label": "Ni 1000, ±0.4℃@25℃"
+      },
+      {
+       "code": "5",
+       "label": "NTC10K-II, ±0.4℃@25℃"
+      },
+      {
+       "code": "6",
+       "label": "NTC10K-III, ±0.4℃@25℃"
+      },
+      {
+       "code": "7",
+       "label": "NTC10K-A, ±0.4℃@25℃"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Range",
+     "options": [
+      {
+       "code": "1",
+       "label": "NO"
+      },
+      {
+       "code": "2",
+       "label": "0~50°C"
+      },
+      {
+       "code": "3",
+       "label": "-20~60°C"
+      },
+      {
+       "code": "9",
+       "label": "Others (customized)"
+      }
+     ]
+    },
+    {
+     "name": "Display Mode",
+     "options": [
+      {
+       "code": "1",
+       "label": "No display"
+      },
+      {
+       "code": "2",
+       "label": "LCD display"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": null,
+   "manual": null,
+   "image": null
+  },
+  {
+   "base": "TxTHP96",
+   "type": "temp-humid",
+   "name": "Probe Type Temperature and Humidity Sensor",
+   "description": "",
+   "features": [
+    "th-indoor",
+    "th-outdoor",
+    "th-temp-rh"
+   ],
+   "specs": [
+    {
+     "name": "Accuracy Range",
+     "options": [
+      {
+       "code": "3",
+       "label": "±3%RH(±0.5°C)"
+      }
+     ]
+    },
+    {
+     "name": "Humidity Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(two wires)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(two wires)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Range",
+     "options": [
+      {
+       "code": "1",
+       "label": "NO"
+      },
+      {
+       "code": "2",
+       "label": "0~50°C"
+      },
+      {
+       "code": "3",
+       "label": "-20~60°C"
+      },
+      {
+       "code": "9",
+       "label": "Others (customized)"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": null,
+   "manual": null,
+   "image": null
+  },
+  {
+   "base": "TxT02",
+   "type": "temp-humid",
+   "name": "Temperature Sensor",
+   "description": "",
+   "features": [
+    "th-duct",
+    "th-temp-rh",
+    "th-wall",
+    "th-water"
+   ],
+   "specs": [
+    {
+     "name": "Model",
+     "options": [
+      {
+       "code": "W",
+       "label": "Wall-mounted"
+      },
+      {
+       "code": "D",
+       "label": "Duct type"
+      },
+      {
+       "code": "C",
+       "label": "Clamp type"
+      },
+      {
+       "code": "S",
+       "label": "Separated type"
+      },
+      {
+       "code": "P",
+       "label": "Tube type/ water pipe type"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(2-wire)"
+      },
+      {
+       "code": "V5",
+       "label": "0~5VDC(3 wire)"
+      },
+      {
+       "code": "1",
+       "label": "Pt100, ±0.2°C@0°C"
+      },
+      {
+       "code": "2",
+       "label": "Pt1000, ±0.2°C@0°C"
+      },
+      {
+       "code": "3",
+       "label": "NTC20K, ±0.4°C@25°C"
+      },
+      {
+       "code": "4",
+       "label": "Ni 1000, ±0.4°C@25°C"
+      },
+      {
+       "code": "5",
+       "label": "NTC10K-II,±0.4°C@25°C"
+      },
+      {
+       "code": "6",
+       "label": "NTC10K-III,±0.4°C@25°C"
+      },
+      {
+       "code": "7",
+       "label": "NTC10K-A,±0.4°C@25°C"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Range",
+     "options": [
+      {
+       "code": "1",
+       "label": "NO"
+      },
+      {
+       "code": "2",
+       "label": "0~50°C"
+      },
+      {
+       "code": "3",
+       "label": "20~60°C"
+      },
+      {
+       "code": "9",
+       "label": "Others (customized)"
+      }
+     ]
+    },
+    {
+     "name": "Probe Length",
+     "options": [
+      {
+       "code": "1",
+       "label": "65MM"
+      },
+      {
+       "code": "2",
+       "label": "100MM"
+      },
+      {
+       "code": "3",
+       "label": "150MM"
+      },
+      {
+       "code": "4",
+       "label": "200MM"
+      },
+      {
+       "code": "9",
+       "label": "Others (customized)"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/02/TxT02.pdf",
+   "manual": null,
+   "image": null
+  },
+  {
+   "base": "TxTHI28",
+   "type": "temp-humid",
+   "name": "Indoor Temperature Humidity Sensor",
+   "description": "",
+   "features": [
+    "th-indoor",
+    "th-temp-rh",
+    "th-wall"
+   ],
+   "specs": [
+    {
+     "name": "Accuracy Range",
+     "options": [
+      {
+       "code": "3",
+       "label": "±3%RH(±0.5°C)"
+      }
+     ]
+    },
+    {
+     "name": "Humidity Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(2-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      },
+      {
+       "code": "N",
+       "label": "No output"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Output",
+     "options": [
+      {
+       "code": "V10",
+       "label": "0~10VDC(3-wire)"
+      },
+      {
+       "code": "A",
+       "label": "4~20mA(2-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485/Modbus"
+      },
+      {
+       "code": "N",
+       "label": "No output"
+      },
+      {
+       "code": "1",
+       "label": "Pt100, ±0.2°C@0°C"
+      },
+      {
+       "code": "2",
+       "label": "Pt1000, ±0.2°C@0°C"
+      },
+      {
+       "code": "3",
+       "label": "NTC10K, ±0.4°C@25°C"
+      },
+      {
+       "code": "4",
+       "label": "NTC20K, ±0.4°C@25°C"
+      }
+     ]
+    },
+    {
+     "name": "Temperature Range",
+     "options": [
+      {
+       "code": "1",
+       "label": "NO"
+      },
+      {
+       "code": "2",
+       "label": "0~50°C"
+      },
+      {
+       "code": "3",
+       "label": "-20~60°C"
+      },
+      {
+       "code": "9",
+       "label": "Others (customized)"
+      }
+     ]
+    },
+    {
+     "name": "Display",
+     "options": [
+      {
+       "code": "1",
+       "label": "without display"
+      },
+      {
+       "code": "2",
+       "label": "with display"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "live-api",
+   "datasheet": null,
+   "manual": null,
+   "image": null
+  },
+  {
+   "base": "TXADP12",
+   "type": "pressure",
+   "name": "Air Differential Pressure Sensor",
+   "description": "The “NEOWAVE TXADP12” micro differential pressure sensor” is our newest invention for measuring pressure differences. It can be easily adjusted in the field because of its multi-range sensor and a simple switch. It comes in a protective case and has a stainless steel connector for easy wiring. This device is great for many uses, like controlling heating and cooling, managing energy, and maintaining air quality in places like clean rooms, kitchens, and industrial facilities.",
+   "features": [
+    "pr-sensor",
+    "pr-air"
+   ],
+   "specs": [
+    {
+     "name": "Pressure range",
+     "options": [
+      {
+       "code": "2",
+       "label": "-100 ~ 100 Pa"
+      },
+      {
+       "code": "4",
+       "label": "-1000 ~ 1000 Pa"
+      },
+      {
+       "code": "6",
+       "label": "-10000 ~ 10000 Pa"
+      }
+     ]
+    },
+    {
+     "name": "Display",
+     "options": [
+      {
+       "code": "1",
+       "label": "Without display"
+      },
+      {
+       "code": "2",
+       "label": "With display"
+      }
+     ]
+    },
+    {
+     "name": "Output",
+     "options": [
+      {
+       "code": "AV",
+       "label": "4-20mA / 0-10VDC (simultaneous output)"
+      },
+      {
+       "code": "A",
+       "label": "4-20mA (two-wire)"
+      },
+      {
+       "code": "V10",
+       "label": "0-10VDC (three-wire)"
+      },
+      {
+       "code": "V5",
+       "label": "0-5VDC (three-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS-485 communication"
+      },
+      {
+       "code": "RSW",
+       "label": "RS-485 communication (isolated)"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "hard-coded",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/03/TxADP12.pdf",
+   "manual": "https://neowave.tech/wp-content/uploads/2024/03/TxADP12-user-manual.pdf",
+   "image": "assets/img/products/ADP12-rip4f2mv7ww8z2wooy7aawxbf4yus7yld333qi3fxs.png"
+  },
+  {
+   "base": "DPS52",
+   "type": "pressure",
+   "name": "Adjustable Differential Pressure Switch",
+   "description": "The DPS52A is an adjustable differential pressure switch engineered for diverse monitoring and control applications. It provides a reliable, low-maintenance alternative to mechanical paddle flow switches, particularly in chiller systems where it eliminates the need for frequent yearly replacements.",
+   "features": [
+    "pr-switch",
+    "pr-liquid",
+    "pr-air"
+   ],
+   "specs": [
+    {
+     "name": "Connector material",
+     "options": [
+      {
+       "code": "1",
+       "label": "Brass"
+      },
+      {
+       "code": "2",
+       "label": "SS 316L"
+      }
+     ]
+    },
+    {
+     "name": "Connector thread",
+     "options": [
+      {
+       "code": "1",
+       "label": "7/16\" UNF female"
+      },
+      {
+       "code": "2",
+       "label": "7/16\" UNF male"
+      },
+      {
+       "code": "3",
+       "label": "R1/4\" male"
+      },
+      {
+       "code": "4",
+       "label": "G1/4\" male"
+      },
+      {
+       "code": "5",
+       "label": "1/4\" NPT male"
+      },
+      {
+       "code": "6",
+       "label": "Connects φ8 soft tube"
+      },
+      {
+       "code": "7",
+       "label": "Connects φ6 steel pipe"
+      }
+     ]
+    },
+    {
+     "name": "Wiring",
+     "options": [
+      {
+       "code": "1",
+       "label": "Plastic gland PG16"
+      },
+      {
+       "code": "2",
+       "label": "Brass nickel-plated gland PG16"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "hard-coded",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/02/DPS52A-1.pdf",
+   "manual": "https://neowave.tech/wp-content/uploads/2024/02/DPS52A-user-manual.pdf",
+   "image": "assets/img/products/DPS52A-1-rgsjkl72a2y8htv5m8i44l9cy5pdp9je1fj3zd3z3k.png"
+  },
+  {
+   "base": "DPS18",
+   "type": "pressure",
+   "name": "Differential Pressure Switch",
+   "description": "The DPS18 is a differential pressure switch that can detect even the slightest pressure variations, due to its small size and reliable design. Its set point or switching point can be adjusted in the field without the need for a manometer, using the adjustment knob and the integrated calibrated visual scale. Additionally, this switch comes with a clear cover that serves as protection against any potential damage.",
+   "features": [
+    "pr-switch",
+    "pr-air"
+   ],
+   "specs": [
+    {
+     "name": "Pressure range",
+     "options": [
+      {
+       "code": "01",
+       "label": "20-200 Pa"
+      },
+      {
+       "code": "02",
+       "label": "30-300 Pa"
+      },
+      {
+       "code": "03",
+       "label": "40-400 Pa"
+      },
+      {
+       "code": "04",
+       "label": "50-500 Pa"
+      },
+      {
+       "code": "05",
+       "label": "200-1000 Pa"
+      },
+      {
+       "code": "06",
+       "label": "100-1000 Pa"
+      },
+      {
+       "code": "07",
+       "label": "500-2500 Pa"
+      },
+      {
+       "code": "08",
+       "label": "1000-5000 Pa"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "hard-coded",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/02/DPS18-4.pdf",
+   "manual": "https://neowave.tech/wp-content/uploads/2024/02/DPS18-USER-MANUAL-new.pdf",
+   "image": "assets/img/products/DPS18-IMAGE-e1750929961584-r7vccg1n32ak2s6sx2zrkxb5o3ttx73t1tj2tbwar4.png"
+  },
+  {
+   "base": "TxDP35",
+   "type": "pressure",
+   "name": "Differential Pressure Transmitter",
+   "description": "",
+   "features": [
+    "pr-sensor",
+    "pr-air"
+   ],
+   "specs": [
+    {
+     "name": "Output",
+     "options": [
+      {
+       "code": "A",
+       "label": "4-20mA"
+      },
+      {
+       "code": "V10",
+       "label": "0-10VDC"
+      },
+      {
+       "code": "RS",
+       "label": "RS485"
+      }
+     ]
+    },
+    {
+     "name": "Unit",
+     "options": [
+      {
+       "code": "K",
+       "label": "kPa"
+      },
+      {
+       "code": "P",
+       "label": "psi"
+      },
+      {
+       "code": "B",
+       "label": "bar"
+      },
+      {
+       "code": "M",
+       "label": "MPa"
+      }
+     ]
+    },
+    {
+     "name": "Accuracy",
+     "options": [
+      {
+       "code": "0.25",
+       "label": "0.25% F.S."
+      },
+      {
+       "code": "0.5",
+       "label": "0.5% F.S."
+      }
+     ]
+    },
+    {
+     "name": "Electrical connection",
+     "options": [
+      {
+       "code": "D",
+       "label": "DIN43650A (big Hirschmann)"
+      },
+      {
+       "code": "M",
+       "label": "M12 waterproof outlet"
+      },
+      {
+       "code": "C3",
+       "label": "GX12 three-core aviation connector"
+      },
+      {
+       "code": "C4",
+       "label": "GX12 four-core aviation connector"
+      },
+      {
+       "code": "H",
+       "label": "M12 four-core aviation connector"
+      }
+     ]
+    },
+    {
+     "name": "Pressure connection",
+     "options": [
+      {
+       "code": "G",
+       "label": "G1/4"
+      },
+      {
+       "code": "N",
+       "label": "NPT1/4"
+      },
+      {
+       "code": "G2",
+       "label": "G1/2"
+      },
+      {
+       "code": "M20",
+       "label": "M20×1.5"
+      },
+      {
+       "code": "M14",
+       "label": "M14×1.5"
+      },
+      {
+       "code": "M10",
+       "label": "M10×1"
+      },
+      {
+       "code": "U",
+       "label": "7/16-20UNF external thread"
+      },
+      {
+       "code": "R",
+       "label": "R1/4"
+      }
+     ]
+    },
+    {
+     "name": "Cable length",
+     "options": [
+      {
+       "code": "1",
+       "label": "1 m"
+      },
+      {
+       "code": "2",
+       "label": "2 m"
+      },
+      {
+       "code": "3",
+       "label": "3 m"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "hard-coded",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/02/TxDP35.pdf",
+   "manual": null,
+   "image": null
+  },
+  {
+   "base": "TxLDP16",
+   "type": "pressure",
+   "name": "Low Differential Pressure Sensor",
+   "description": "NEOWAVE TxLDP16 is versatile and low-cost pressure sensor controller that can be used for various applications such as air conditioning, ventilation, airflow management, lab regulation, and environmental protection. It excels in monitoring low-pressure applications with non-corrosive gases and is ideal for energy management systems.",
+   "features": [
+    "pr-sensor",
+    "pr-air"
+   ],
+   "specs": [
+    {
+     "name": "Pressure range",
+     "options": [
+      {
+       "code": "101D",
+       "label": "0 ±100 Pa (two-way)"
+      },
+      {
+       "code": "101G",
+       "label": "0-100 Pa (one-way)"
+      },
+      {
+       "code": "102D",
+       "label": "0 ±1000 Pa"
+      },
+      {
+       "code": "102G",
+       "label": "0-1000 Pa"
+      },
+      {
+       "code": "251D",
+       "label": "0 ±250 Pa"
+      },
+      {
+       "code": "251G",
+       "label": "0-250 Pa"
+      },
+      {
+       "code": "252D",
+       "label": "0 ±2500 Pa"
+      },
+      {
+       "code": "252G",
+       "label": "0-2500 Pa"
+      },
+      {
+       "code": "051D",
+       "label": "0 ±50 Pa"
+      },
+      {
+       "code": "051G",
+       "label": "0-50 Pa"
+      },
+      {
+       "code": "501D",
+       "label": "0 ±500 Pa"
+      },
+      {
+       "code": "501G",
+       "label": "0-500 Pa"
+      },
+      {
+       "code": "502D",
+       "label": "0 ±5000 Pa"
+      },
+      {
+       "code": "502G",
+       "label": "0-5000 Pa"
+      },
+      {
+       "code": "103D",
+       "label": "0 ±10000 Pa"
+      }
+     ]
+    },
+    {
+     "name": "Output",
+     "options": [
+      {
+       "code": "A",
+       "label": "4-20mA (two-wire)"
+      },
+      {
+       "code": "V10",
+       "label": "0-10VDC (three-wire)"
+      },
+      {
+       "code": "V5",
+       "label": "0-5VDC (three-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS-485 communication"
+      },
+      {
+       "code": "RsV10",
+       "label": "RS485 + 0-10VDC"
+      },
+      {
+       "code": "RsV5",
+       "label": "RS485 + 0-5VDC"
+      },
+      {
+       "code": "RsA",
+       "label": "RS485 + 4-20mA"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "hard-coded",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/02/TxLDP16-1-1.pdf",
+   "manual": "https://neowave.tech/wp-content/uploads/2024/02/TxLDP16-user-manual.pdf",
+   "image": "assets/img/products/15-qx1xde3hoz8lvqhehk14afp4t8d3rjd3wmjmiohpww.jpg"
+  },
+  {
+   "base": "TxSL20",
+   "type": "level",
+   "name": "Submersible Liquid Level Transducer",
+   "description": "The NEOWAVE TxSL20 is a submersible liquid level transducer utilizing a high-performance pressure sensor for precise depth measurement. With submersible pressure sensors, it converts measurements into standard output signals via a specialized circuit, ensuring accuracy. Featuring high precision, compact size, and ease of use, it’s ideal for measuring liquid levels in various industries like petroleum, chemical, power plants, urban water supply, and hydro-logical exploration",
+   "features": [],
+   "specs": [
+    {
+     "name": "Output",
+     "options": [
+      {
+       "code": "A",
+       "label": "4-20mA (two-wire)"
+      },
+      {
+       "code": "V0",
+       "label": "0.5-4.5V (three-wire)"
+      },
+      {
+       "code": "V5",
+       "label": "0-5V (three-wire)"
+      },
+      {
+       "code": "V10",
+       "label": "0-10V (three-wire)"
+      },
+      {
+       "code": "RS",
+       "label": "RS485"
+      }
+     ]
+    },
+    {
+     "name": "Unit",
+     "options": [
+      {
+       "code": "M",
+       "label": "Meter"
+      },
+      {
+       "code": "CM",
+       "label": "Centimeter"
+      }
+     ]
+    },
+    {
+     "name": "Accuracy",
+     "options": [
+      {
+       "code": "0.5",
+       "label": "0.5% F.S."
+      }
+     ]
+    },
+    {
+     "name": "Electrical connection",
+     "options": [
+      {
+       "code": "M",
+       "label": "Direct outlet"
+      }
+     ]
+    },
+    {
+     "name": "Display",
+     "options": [
+      {
+       "code": "1",
+       "label": "Without display"
+      },
+      {
+       "code": "2",
+       "label": "Explosion-proof digital display"
+      }
+     ]
+    },
+    {
+     "name": "Cable length",
+     "options": [
+      {
+       "code": "1",
+       "label": "1 m"
+      },
+      {
+       "code": "2",
+       "label": "2 m"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "hard-coded",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/02/TxSL20-1.pdf",
+   "manual": null,
+   "image": "assets/img/products/16-qx1xvrtvccegx7s75i2h1spn0hriagc53ltgdh8k8g.png"
+  },
+  {
+   "base": "LFS22",
+   "type": "flow",
+   "name": "Liquid Flow Switch",
+   "description": "The LFS22 series liquid flow switch is crafted to regulate fluctuations in liquid flow within pipes, accommodating various liquids like water, ethylene glycol, or other non-hazardous fluids. When the liquid flow exceeds or falls below the set threshold, the single-pole double-throw contacts (SPDT) can establish a connection in one circuit while simultaneously interrupting another. The LFS22 series liquid flow switch is typically employed for chain reaction or “no flow” safeguarding purposes.",
+   "features": [],
+   "specs": [
+    {
+     "name": "Connection size",
+     "options": [
+      {
+       "code": "1",
+       "label": "1\" NPT"
+      },
+      {
+       "code": "2",
+       "label": "1/2\" NPT"
+      },
+      {
+       "code": "3",
+       "label": "3/4\" NPT"
+      }
+     ]
+    },
+    {
+     "name": "Material",
+     "options": [
+      {
+       "code": "1",
+       "label": "Brass (water and liquids suitable for brass)"
+      },
+      {
+       "code": "2",
+       "label": "Stainless steel (ammonia and liquids suitable for stainless steel)"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "hard-coded",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/02/LFS22-2.pdf",
+   "manual": "https://neowave.tech/wp-content/uploads/2024/02/LFS22-USER-MANUAL.pdf",
+   "image": "assets/img/products/LFS22-1-rip6ebsfasfr2xenm905tfm8jnrja7u2trf6emg29c.png"
+  },
+  {
+   "base": "VTRM20-XP",
+   "type": "smart-thermostat",
+   "name": "VAV (Variable Air Volume) Thermostat",
+   "description": "",
+   "features": [],
+   "specs": [
+    {
+     "name": "Communication",
+     "options": [
+      {
+       "code": "1",
+       "label": "Modbus RS485"
+      },
+      {
+       "code": "2",
+       "label": "BACnet MS/TP"
+      }
+     ]
+    },
+    {
+     "name": "Interface",
+     "options": [
+      {
+       "code": "1",
+       "label": "No interface"
+      },
+      {
+       "code": "2",
+       "label": "Colour capacitive touchscreen"
+      },
+      {
+       "code": "3",
+       "label": "Bluetooth app interface"
+      },
+      {
+       "code": "4",
+       "label": "Touchscreen and Bluetooth"
+      },
+      {
+       "code": "5",
+       "label": "LoRaWAN wireless, EU868 MHz"
+      },
+      {
+       "code": "6",
+       "label": "LoRaWAN wireless EU868 MHz with touchscreen"
+      }
+     ]
+    },
+    {
+     "name": "Measurement",
+     "options": [
+      {
+       "code": "1",
+       "label": "No extra measurements"
+      },
+      {
+       "code": "2",
+       "label": "Relative humidity"
+      },
+      {
+       "code": "3",
+       "label": "VOC and humidity"
+      },
+      {
+       "code": "4",
+       "label": "PIR movement"
+      },
+      {
+       "code": "5",
+       "label": "Relative humidity and PIR movement"
+      },
+      {
+       "code": "6",
+       "label": "VOC, relative humidity and PIR movement"
+      }
+     ]
+    },
+    {
+     "name": "Output",
+     "options": [
+      {
+       "code": "1",
+       "label": "No output"
+      },
+      {
+       "code": "2",
+       "label": "24V relay output"
+      }
+     ]
+    },
+    {
+     "name": "Colour",
+     "options": [
+      {
+       "code": "B",
+       "label": "Black"
+      },
+      {
+       "code": "W",
+       "label": "White"
+      }
+     ]
+    }
+   ],
+   "active": true,
+   "source": "hard-coded",
+   "datasheet": "https://neowave.tech/wp-content/uploads/2024/09/VTRM20-XP-2.pdf",
+   "manual": null,
+   "image": "assets/img/products/Untitled-1_0010_Vector-Smart-Object-quwmva6axxwte55lkh4jm0ibj62wsuz3smax4zplrk.jpg"
+  },
+  {
+   "base": "TxTH52",
+   "type": "temp-humid",
+   "name": "Legacy model (superseded by TxTHO23)",
+   "description": "",
+   "features": [],
+   "specs": [],
+   "active": false,
+   "source": "legacy",
+   "superseded_by": "TxTHO23",
+   "datasheet": null,
+   "manual": null,
+   "image": null
+  },
+  {
+   "base": "TxTH28N",
+   "type": "temp-humid",
+   "name": "Legacy model (superseded by TxTH29)",
+   "description": "",
+   "features": [],
+   "specs": [],
+   "active": false,
+   "source": "legacy",
+   "superseded_by": "TxTH29",
+   "datasheet": null,
+   "manual": null,
+   "image": null
+  },
+  {
+   "base": "TxTHP",
+   "type": "temp-humid",
+   "name": "Legacy model (superseded by TxTHP96)",
+   "description": "",
+   "features": [],
+   "specs": [],
+   "active": false,
+   "source": "legacy",
+   "superseded_by": "TxTHP96",
+   "datasheet": null,
+   "manual": null,
+   "image": null
+  },
+  {
+   "base": "TxTH28",
+   "type": "temp-humid",
+   "name": "Legacy model (superseded by TxTHI28)",
+   "description": "",
+   "features": [],
+   "specs": [],
+   "active": false,
+   "source": "legacy",
+   "superseded_by": "TxTHI28",
+   "datasheet": null,
+   "manual": null,
+   "image": null
+  },
+  {
+   "base": "TxSL22",
+   "type": "level",
+   "name": "Legacy model (superseded by TxTL93)",
+   "description": "",
+   "features": [],
+   "specs": [],
+   "active": false,
+   "source": "legacy",
+   "superseded_by": "TxTL93",
+   "datasheet": null,
+   "manual": null,
+   "image": null
+  }
+ ]
+}

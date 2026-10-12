@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Generator Admin — NeoWave</title>
+<link rel="icon" href="/assets/img/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+
+<!-- ============ LOGIN ============ -->
+<div class="login" id="login" hidden>
+  <form class="login-card" id="loginForm">
+    <img src="/assets/img/logo.png" alt="NeoWave" class="login-logo">
+    <h1>Generator admin</h1>
+    <p>Sign in to edit product codes, options and filters.</p>
+    <label class="fld"><span>Username</span><input class="inp" type="text" id="loginEmail" autocomplete="username" autocapitalize="none" spellcheck="false" required></label>
+    <label class="fld"><span>Password</span><input class="inp" type="password" id="loginPw" autocomplete="current-password" required></label>
+    <button class="btn btn-primary" type="submit">Sign in</button>
+    <p class="login-err" id="loginErr" role="alert"></p>
+  </form>
+</div>
+
+<!-- ============ APP ============ -->
+<div class="app" id="app" hidden>
+  <header class="top">
+    <div class="brand"><img src="/assets/img/logo.png" alt="NeoWave"><span>Generator admin</span></div>
+    <div class="top-actions">
+      <span class="pub-state" id="pubState"></span>
+      <a class="btn btn-ghost" href="/generator" target="_blank" rel="noopener">View generator ↗</a>
+      <button class="btn btn-primary" id="publishBtn" type="button">Publish to site</button>
+      <button class="me" id="pwBtn" type="button" title="Change password"><span id="meEmail"></span></button>
+      <button class="icon-btn" id="logoutBtn" type="button" title="Sign out" aria-label="Sign out"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg></button>
+    </div>
+  </header>
+
+  <aside class="side">
+    <nav class="tabs" role="tablist">
+      <button class="tab on" data-tab="models" role="tab">Models</button>
+      <button class="tab" data-tab="features" role="tab">Features</button>
+      <button class="tab" data-tab="activity" role="tab">Activity</button>
+      <button class="tab" data-tab="team" role="tab">Team</button>
+    </nav>
+    <div class="side-pane" id="pane-models">
+      <div class="side-tools">
+        <input class="inp" id="mSearch" type="search" placeholder="Search code or name">
+        <div class="side-row">
+          <select class="inp" id="mType"><option value="">All types</option></select>
+          <label class="switch-sm"><input type="checkbox" id="mHidden"><span>Hidden</span></label>
+        </div>
+        <button class="btn btn-dark btn-block" id="newModel" type="button">+ New model</button>
+      </div>
+      <div class="m-list" id="mList"></div>
+    </div>
+    <div class="side-pane" id="pane-features" hidden>
+      <p class="side-note">Features are the filter chips visitors use to narrow models within a product type.</p>
+      <div id="fList"></div>
+    </div>
+    <div class="side-pane" id="pane-activity" hidden>
+      <div id="aList"></div>
+    </div>
+    <div class="side-pane" id="pane-team" hidden>
+      <p class="side-note">Everyone listed here can sign in and edit the generator.</p>
+      <div id="uList"></div>
+      <form class="u-add" id="uAddForm">
+        <b>Add an admin</b>
+        <input class="inp" id="uEmail" type="text" placeholder="Username or email" autocapitalize="none" spellcheck="false" required>
+        <input class="inp" id="uName" placeholder="Name (optional)">
+        <button class="btn btn-dark btn-block" type="submit">Create account</button>
+      </form>
+    </div>
+  </aside>
+
+  <main class="main" id="main">
+    <div class="welcome" id="welcome">
+      <b>Pick a model to edit, or create a new one.</b>
+      <p>Saved changes go straight to the database. Press <kbd>Publish to site</kbd> when you're ready to update the public generator.</p>
+    </div>
+    <form class="editor" id="editor" hidden novalidate></form>
+  </main>
+</div>
+
+<!-- image library -->
+<dialog class="dlg dlg-lg" id="imgDlg">
+  <div class="dlg-head"><b>Product photos</b><input class="inp" id="imgSearch" type="search" placeholder="Filter by file name"><button class="icon-btn" data-close type="button" aria-label="Close">✕</button></div>
+  <div class="img-grid" id="imgGrid"></div>
+</dialog>
+
+<!-- confirm -->
+<dialog class="dlg" id="confirmDlg">
+  <b id="confirmTitle"></b>
+  <p id="confirmText"></p>
+  <div class="dlg-actions"><button class="btn btn-ghost" data-close type="button">Cancel</button><button class="btn btn-danger" id="confirmOk" type="button">Confirm</button></div>
+</dialog>
+
+<!-- new admin created -->
+<dialog class="dlg" id="newUserDlg">
+  <b>Admin account created</b>
+  <p>Share these sign-in details privately. This password is shown only once; they should change it after signing in (click their name in the top bar).</p>
+  <div class="cred"><span>Username</span><code id="newUserEmail"></code><span>Temporary password</span><code id="newUserPw"></code></div>
+  <div class="dlg-actions"><button class="btn btn-ghost" id="copyNewPw" type="button">Copy</button><button class="btn btn-dark" data-close type="button">Done</button></div>
+</dialog>
+
+<!-- change password -->
+<dialog class="dlg" id="pwDlg">
+  <form id="pwForm" class="pw-form">
+    <b>Change your password</b>
+    <label class="fld"><span>Current password</span><input class="inp" type="password" id="pwCurrent" autocomplete="current-password" required></label>
+    <label class="fld"><span>New password <em>(at least 10 characters)</em></span><input class="inp" type="password" id="pwNext" autocomplete="new-password" minlength="10" required></label>
+    <label class="fld"><span>Repeat new password</span><input class="inp" type="password" id="pwNext2" autocomplete="new-password" minlength="10" required></label>
+    <p class="login-err" id="pwErr" role="alert"></p>
+    <div class="dlg-actions"><button class="btn btn-ghost" data-close type="button">Cancel</button><button class="btn btn-primary" type="submit">Change password</button></div>
+  </form>
+</dialog>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="/admin/admin.js"></script>
+</body>
+</html>

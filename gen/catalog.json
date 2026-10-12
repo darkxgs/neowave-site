@@ -1,0 +1,826 @@
+{
+ "industrial-switches": {
+  "items": [
+   {
+    "name": "24 port L2+ Managed Industrial Ethernet Switches – NW-ISM-4GX24GT-C",
+    "img": "assets/img/products/24-c-r4si1w6y5tin3amo8ub6y53h2d41ibdgllr40i029c.png",
+    "desc": "NW-ISM-4GX24GT-C A high-performance 24-portGigabit + 4-port fiber managed industrial switch built for extreme environments. Features fanless cooling, -40°C to+75°C operation, and 8-15KV lightning protection with ERPS ring redundancy for <50ms failover. Combines 28ports (24xGbE RJ45 + 4x1000Base-X SFP) with industrial-grade reliability for critical infrastructure.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/04/NW-ISM-4GX24GT-C.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2025/04/NW-Switch-Configuration-Operation-manual.pdf"
+     }
+    ]
+   },
+   {
+    "name": "16 port L2+ Managed Industrial Ethernet Switches – NW-ISM-16TX-C",
+    "img": "assets/img/products/16cc-r654o0zx7s2fe9gq907mn84ioz1dgpvic7bq5ogfao.png",
+    "desc": "NW-ISM-16TX-C 16-port managed industrial FastEthernet switch designed for mission-critical applications. This rugged switch features fanless cooling, wide operating temperature (-40°C to +75°C),and high protection level, delivering exceptional resistance to extreme temperatures and lightning strikes(8-15KV ESD). Equipped with advanced switching protocols and ERPS (Ethernet Ring Protection Switching),it ensures network redundancy and millisecond-level recovery for uninterrupted operation in harsh industrial environments.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/04/NW-ISM-16TX-C.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2025/04/M-version-WEB-managed-user-manual-16TX-C.pdf"
+     }
+    ]
+   },
+   {
+    "name": "5 Ports L2 Managed Industrial Ethernet Switches – NW-ISM-05GT-C",
+    "img": "assets/img/products/5cc-r6549m50f8c5dieeerxkev22sa2rfsnocv7p8xtqpc.png",
+    "desc": "The NW-ISM-05GT-C is a 5-port managed industrial Gigabit Ethernet switch designed for harsh environments. It features fanless cooling, wide temperature tolerance (-40°C to +75°C), and high protection (IP40), ensuring reliable performance in demanding industrial applications. With10/100/1000Base-T ports, wide DC input (12~58V), androbust lightning/ESD protection (8KV-15KV), it delivers stable connectivity while complying with RoHS, FCC, andCE standards.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/04/NW-ISM-05GT-C.pdf"
+     }
+    ]
+   },
+   {
+    "name": "8 Ports L2 Managed Industrial Ethernet Switches – NW-ISM-08GT-C",
+    "img": "assets/img/products/8cc-r654doru1dwvoohemjbd7u1zge00sktsx0zg43sbqo.png",
+    "desc": "The NW-ISM-08GT-C 8-port managed industrial Gigabit Ethernet switch delivering rugged reliability for harsh environments. Features industrial-grade components with fanless cooling, wide temperature tolerance (-40°Cto +75°C), and robust protection against power surges(8-15KV ESD).",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/04/NW-ISM-08GT-C.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2025/04/Web-Light-network-Management-switch-software-manual-8GT-C.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Industrial 20 Port Gigabit Ethernet Managed Switch – NW-ISM-20G-4F-X4",
+    "img": "assets/img/products/20-r4sfil5ca6ixax9aevgu8okjpx5gsrw4doe4rvdsog.png",
+    "desc": "The NW-ISM-20G-4F-X4 is a hardened 20-port managed industrial switch designed for mission-critical networking in extreme environments. Combining 16 copper Gigabit ports with 4 fiber SFP slots, this rugged switch delivers reliable connectivity for industrial automation and infrastructure applications. Its robust design ensures continuous operation in harsh conditions, from freezing outdoor installations to high-temperature industrial facilities.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/04/NW-ISM-20G-4F-X4.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Industrial 18 Ports Giga Managed Switch – NW-ISM-18G-2F-X4",
+    "img": "assets/img/products/18-r4semcantsdt0i3hpfol7bia3235qkvma2ph35704w.png",
+    "desc": "The NW-ISM-18G-2F-X4 is a rugged 18-port managed Layer 2 Gigabit switch with 16×10/100/1000Base-T(X)ports and 2×100/1000Base-FX SFP slots. It features ITU-T G.8032 ERPS v2 for <50ms network recovery, dual power inputs, and advanced security (RADIUS, TACACS+,VLAN, SNMP, SSH/SSL). Designed for harsh environments, it operates in -10°C to 65°C (extended-40°C to 75°C) with fanless reliability.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/04/NW-ISM-18G-2F-X4.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Industrial 8 Port L2 Gigabit Managed Switch – NW-ISM-08G-X4",
+    "img": "assets/img/products/8-r4se7whwuem8o52j0ozwegodkz96hyk1ylxyp4lpps.png",
+    "desc": "The NW-ISM-08G-X4 is a rugged 8-port Gigabit Ethernet switch designed for harsh industrial environments.It operates in a wide temperature range (-10°C to 65°C,with an optional -40°C to 75°C version) and supports 12-48VDC power input. Compliant with CE, FCC, andUL61010, it ensures reliable performance in demanding applications. The switch features advanced security(Radius, SSH, SSL) and redundancy protocols (RSTP,MSTP, ERPS), along with a USB port for easy configuration and full L2 management capabilities.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/04/NW-ISM-08G-X4.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Industrial 16 Port Gigabit Managed Switch – NW-ISM-16G-X4",
+    "img": "assets/img/products/16-r4sdzknea97rsj62nldwt2cc32b3aihohdu2luyauo.png",
+    "desc": "The NW-ISM-16G-X4 is a rugged 16-port managed Gigabit Ethernet switch designed for demanding industrial environments. This Layer 2 switch delivers reliable connectivity with redundant power inputs and operates in extreme temperatures from -40°C to 75°C, making it ideal for mission-critical applications.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/04/NW-ISM-16G-X4.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Industrial Ethernet Switches 24 Ports NW-IS- 4GX24TX",
+    "img": "assets/img/products/24-r1qmdwwuvt7dasctgxrukafpjo7c8rfzvcdwh9svw0.png",
+    "desc": "NW-IS-4GX24TX is a high-performance Industrial Ethernet Switch with 4× 1000Base-X and 24× 10/100Base-TX ports, designed for reliability and efficiency. Featuring a fanless cooling system, wide temperature tolerance, and high protection level, it ensures durability in extreme conditions. With lightning protection and enhanced network stability, it delivers secure and uninterrupted industrial communication.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/02/NW-IS-4GX24X.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Industrial Ethernet Switches 16 Ports NW-IS- 16TX",
+    "img": "assets/img/products/16-r1qm93yjyamlyjc1iv0hti2w8rvswgddvkck6cxbow.png",
+    "desc": "The NW-IS-16TX is a high-performance 16-port 10/100 Base-TX unmanaged industrial Ethernet switch. Designed with a fanless cooling system, wide temperature tolerance, and high protection levels, it ensures durability in extreme conditions. With enhanced resistance to temperature fluctuations and built-in lightning protection, it guarantees reliable and secure industrial networking.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/02/NW-IS-16X.pdf"
+     }
+    ]
+   }
+  ],
+  "pdfs": []
+ },
+ "i-o-modules": {
+  "items": [],
+  "pdfs": [
+   "https://neowave.tech/wp-content/uploads/2025/04/N-series-NeoWave-Modules.pdf"
+  ]
+ },
+ "temperature-and-humidity": {
+  "items": [
+   {
+    "name": "Premium Room Humidity and Temperature and Air Quality Sensor/Conrtoller-TC/AQC100-XP",
+    "img": "assets/img/products/AQC100-e1750410554106-r7kvmomlfd9i5zek2xqgn6secw0wxnuohbyyjw20z4.png",
+    "desc": "The TC/AQC100-XP Series Controllers have been designed to be wall mounted universal temperature, air quality, humidity controllers in room spaces. The controllers are suitable for a wide range of applications and have pre-defined application logic that covers most room control heating and cooling systems such as fan coil units, chilled ceilings, zone heating etc.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/05/AQC-XP-TC-XP-100-NeoWave.pdf"
+     }
+    ]
+   },
+   {
+    "name": "High-temperature Temperature& Humidity Sensor-TxTHH99",
+    "img": "assets/img/products/TxTHH99-image-r7kpskrbrjn4zulhym7lspi659m9daqn9eapq9l1tc.png",
+    "desc": "TxTHH99 sensor ensures high-precision temperature and humidity measurement for industrial and climate control applications. Its split probe withstands up to 180°C, offering long-term stability, anti-pollution, and strong EMI resistance. The durable metal design enhances reliability in harsh conditions",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/03/TxTHH99.pdf"
+     }
+    ]
+   },
+   {
+    "name": "High Accuracy Temperature & Humidity Sensor-TxTHAC95",
+    "img": "assets/img/products/TxTHAC95-image-r7ksv8bcbf4br9v5tg4ibs9no87tik13532hkxilbk.png",
+    "desc": "TxTHAC95 sensor features a high-precision digital core with an integrated structure for strong anti-interference. Factory-calibrated for accuracy, it’s ideal for smart buildings, incubators, industrial dehumidifiers, and more",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/03/TxTHAC95.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Armored Temperature Sensor- TxTA03",
+    "img": "assets/img/products/TxA03-image-r7kt2q30svdmbczb26qfpe6y5ta5vos1u6aubcelps.png",
+    "desc": "TxTA03 temperature sensor uses high-precision platinum resistance with a 304 stainless steel probe, ensuring durability and corrosion resistance. It offers multiple installation options and suits various industries, including petroleum, chemical, HVAC, and hydrology",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/03/TxTA03-2.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Integrated Temperature Sensor-TxTI04",
+    "img": "assets/img/products/TxTI04-image-r7kt7z0kykk94zcveyeg4kilk9exuum3k5ffrymgz4.png",
+    "desc": "TxTI04 Integrated Temperature Sensor byNeoWave utilizes a high-resolution, high-precision temperature sensor as its measuring element. The amplifier circuit, housed in a 304 stainless steel enclosure, converts the sensor signal into an analog output. This robust stainless steel temperature sensor is ideal for various industrial applications.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/03/TxTI04-2.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Magnetic Temperature & Humidity Sensor-TxTHM98",
+    "img": "assets/img/products/TxTHM98-image-r7ktyxzv2fhga66gx44269hr7ah3q6otlnc0ismsfk.png",
+    "desc": "The NeoWave TxTHM96 series temperature and humidity sensor uses a high-precision temperature and humidity sensor with high accuracy, fast response, and excellent long-term stability. The back of the device has four strong magnets, allowing it to be directly attached to cabinets or wall-mounted, significantly improving installation efficiency. It can display temperature, humidity, and address.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/03/TxTHM98.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2025/03/TxTHM98-manual-Neutral-1.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Indoor Temperature Humidity Controller -CTH27",
+    "img": "assets/img/products/Untitled-1_0007_Vector-Smart-Object-quwncbywwr91zie10cfxc7mbfs1lf7ntt0aziofiwg.jpg",
+    "desc": "The CTH21 series is a compact and efficient solution designed for indoor temperature and humidity detection and control. It combines advanced engineering with user-friendly features, making it ideal for environments requiring precise monitoring and management of temperature and humidity levels.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/02/CTH27-1.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Outdoor Temperature And Humidity Sensor- TxTHO23",
+    "img": "assets/img/products/Untitled-1_0000_Vector-Smart-Object-quwnnl3cqcnmzg1kapk4ovdzgukskrc50ph9cxqueo.jpg",
+    "desc": "The TxTHO23 is a specialized sensor designed for outdoor temperature and humidity monitoring.Equipped with a standard radiation shield, it offers protection against wind and rain, ensuring optimal performance even in harsh weather conditions.The sensor provides three output options: current,voltage, and RS485, making it versatile for various applications. It is ideal for use in environments such as construction sites, weather monitoring systems, and other outdoor settings.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/09/TxTHO23.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Temperature & Humidity Sensor – TxTH29",
+    "img": "assets/img/products/Untitled-1_0003_Layer-4-quwnu8s753rr80def35zuowiy3re3kroxnu2qhvgc0.jpg",
+    "desc": "The TxTH29 series temperature and humidity sensor is designed for industrial use, offering wall-mounted, pipeline, and split installation options. It supports current, voltage, and RS485output modes, ensuring flexibility. With easy installation and strong adaptability, it is ideal ford ata centers, HVAC systems, buildings,greenhouses, farms, and other environments requiring precise monitoring.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/09/TxTH29.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Room Humidity and Temperature Sensor-TxTH91-XP",
+    "img": "assets/img/products/91-IMAGE-r7kw8tpqevknnb8qsia3dlna3mw68zr26x6pij86eo.png",
+    "desc": "The TxTH91-XP Sensors specialized in monitoring and controlling temperature and humidity levels within indoor environments. With a contemporary design, they can be easily mounted on walls or standard wall boxes. Optional color displays with durable glass fronts are available, and they support communication via Modbus or BACnet protocols.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/07/TxTH91-XP-6.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2024/07/TxTH91-XP-User-Manual-1.pdf"
+     }
+    ]
+   }
+  ],
+  "pdfs": []
+ },
+ "air-quality": {
+  "items": [
+   {
+    "name": "Fixed Gas Concentration Detector-FGD-112",
+    "img": "assets/img/products/112-rip51bhcyrcjquleskdfbau1jfbkyc9wf6wsm940og.png",
+    "desc": "The FGD-112 is a reliable, high-precision gas detection device designed for continuous 24/7 monitoring of gas concentrations in industrial and hazardous environments. Equipped with advanced imported sensors and fast-response processing circuits, it delivers stable signals, high accuracy, and excellent repeatability.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/09/FGD112.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Smart Air Quality Controller-AQS117",
+    "img": "assets/img/products/AQS117-r64wno2clhbposbm2czvpzpu5kbo3h3xcyha1s0c4w.png",
+    "desc": "The AQS117 is an intelligent air quality controller with integrated environmental sensors (PM2.5, CO₂,formaldehyde, TVOC, temperature, humidity). It supportsRS485 (Modbus RTU) and controls 3-speed fans & dampers, ideal for smart buildings, offices, and industrial spaces.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/05/AQS117.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Room Dust PM2.5&PM10 Sensor/Controller-TxDI36",
+    "img": "assets/img/products/36-rip5oeeosay0u52g0jjmjh5io1k1yrwm9fm0uuvzw0.png",
+    "desc": "NeoWave TxDI36 PM2.5/PM10 Indoor Dust Sensor A laser-based sensor that detects particle sizes from 0.3 to 10μm (PM2.5/PM10) with high accuracy, fast response, and long-term reliability. Features overvoltage & reverse polarity protection, multiple output options (current, voltage, RS485), and an optional relay output for alarms/control. The six-color LED screen visually indicates air quality levels, while the compact design allows for easy wall-mount installation",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/03/TxDI36-1.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Multi-in-one Air Quality Sensor-AQS820",
+    "img": "assets/img/products/Screenshot-2024-11-08-140820-qwuc1btlzaxn0xq2jmuxb1i2vas6otzu0u2qx4g9rk.png",
+    "desc": "NeoWave AQS820 is a compact air quality monitoring device integrating one to 11 sensor types, offering various sensor combinations to suit diverse application needs. With dedicated probes for each parameter, it ensures accurate measurements and includes external temperature and humidity sensors. A real-time display screen provides continuous environmental updates. Its compact design ensures minimal space usage without compromising functionality, performance stability, or cost efficiency. The AQS820 is ideal for environmental quality monitoring and IoT-based gas detection applications.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/11/AQS820-1.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Room Carbon Monoxide Sensor-TxCOI32",
+    "img": "assets/img/products/32-rip5iw2qq9eisf2j6ntcfd79bqplun1965yklh22cw.png",
+    "desc": "The TxCOI32 is a high-performance CO sensor with electrochemical detection for fast response, stable readings, and high accuracy. Features wide voltage input, overvoltage/reverse polarity protection, and configurable relay output for alarms. Supports current/voltage or RS485 output.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/11/TxCOI32-3.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2024/11/TxCOI32-User-Manual.pdf.pdf"
+     }
+    ]
+   },
+   {
+    "name": "All-In-One Air Quality Sensor – TxAQ37",
+    "img": "assets/img/products/Untitled-1_0007_Vector-Smart-Object-quwncbywwr91zie10cfxc7mbfs1lf7ntt0aziofiwg.jpg",
+    "desc": "TxAQ37 All-In-One Air Quality Sensor detects temperature, humidity, CO2, PM2.5, PM10, VOC, and formaldehyde—up to 7 parameters. It offers RS485 output with a built-in Modbus protocol for real-time, multi-point data detection. The indoor model can include a display screen and a three-color LED indicator to show air quality status. Both indoor and top suction types support RS485 communication configuration. With wide power supply options and protection features, it’s ideal for air quality monitoring in commercial complexes, offices, hotels, airports, and schools.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/09/TxAQ37-1.pdf-1.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Carbon Dioxide (CO2) & Temperature (Wall and Duct) Sensor- TxCDT380",
+    "img": "assets/img/products/380-rip59cznfqcv2qwvu1iin9s0i3omt4786zucfh6rg0.png",
+    "desc": "The TxCDT380 series CO₂ & temperature sensors by NeoWave Co. are advanced, all-in-one devices designed for precise monitoring and control of indoor air quality (IAQ) and temperature. Available in wall-mount (TxCDT380W) and duct-mount (TxCDT380D) versions, these sensors integrate high-performance NDIR technology for accurate CO₂ measurement and temperature compensation, ensuring long-term reliability and minimal maintenance",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/03/TxCDT380WD-1.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Wall-Mounted Carbon Monoxide (CO) Sensor-TxCOW31",
+    "img": "assets/img/products/2-2-qk4n9u57sotyvysfpyak8a67mk4o1x1vy50k2nvf5c-qx16pj8mph9m2sq9dni53nhuubdliispxrvq4joju8.jpg",
+    "desc": "The TxCOW31 Wall-mounted Carbon Monoxide Sensor uses electrochemical technology to detect CO in the air, offering high selectivity and stability. It features three output options: current, voltage, and RS485, with wide voltage input and reverse polarity protection",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/TxCOW31-1.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/TxCOW31-User-Manual.pdf.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Room Carbon Dioxide Sensor-TxCDI35",
+    "img": "assets/img/products/3-1-qk4mzlohdmtkgtnnhj0t2v5iriks8kf3vha7y71qwg-qx16v2ieycueg4ot21n1s97ks03eucrtd66nv7h374.jpg",
+    "desc": "The TxCDI35 measures CO2 concentration using NDIR (Non-Dispersive Infrared) technology, which detects gas levels based on infrared light absorption. This method ensures long life, stability, and high accuracy compared to electrochemical sensors. Featuring an imported high-performance NDIR sensor, it offers fast response, reliable performance, and a compact design for easy installation",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/TxCDI35-1.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/TxCDI35USER-MANUAL.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Duct Carbon Dioxide Sensor-TxCDD34",
+    "img": "assets/img/products/4-qk4me43b4zel1qvbyqmuksd5vehp9o40l4dlzgwr5c-qx1x00u4hsxsrdwgjs04tt54ny96aiajegj0t0baeo.jpg",
+    "desc": "The TxCDD34 uses advanced NDIR technology to accurately measure CO₂ levels through infrared light absorption, offering superior longevity and stability compared to electrochemical sensors. Featuring an industrial-grade design with wide voltage input and robust housing for harsh environments",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/TxCDD34-1.pdf"
+     }
+    ]
+   }
+  ],
+  "pdfs": []
+ },
+ "pressure-air-liquid": {
+  "items": [
+   {
+    "name": "General Type Pressure Sensor-TxDP-401",
+    "img": "assets/img/products/TxDP401-rpzy9qwbs54sv3nq5pc8xyk14zg5m68tul7dgjj3w0.png",
+    "desc": "The TxD401 Pressure Sensor is a compact and reliable sensor designed for accurate pressure measurement in liquids and gases. Built with a high-performance ceramic sensing element, it delivers excellent stability, corrosion resistance, and dependable performance across a wide range of industrial and HVAC applications.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2026/07/TxDP401.pdf"
+     }
+    ]
+   },
+   {
+    "name": "FLOAT SWITCH-FS03",
+    "img": "assets/img/products/FS03-rjtpan0132s8q6q2vxz0lm6kdju218txd61ko821rk.png",
+    "desc": "FS03 Float Switch Easily control liquid levels in barrels, tanks, and wells with the FS03 Float Switch. Automatic, reliable, and simple to install, it requires no maintenance and is safe, non-toxic, and eco-friendly. Resistant to sewage and harsh liquids, it’s perfect for domestic, industrial, and mining applications—including oil, acid, and alkali tanks, sinks, and more.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2026/02/FS03.pdf"
+     }
+    ]
+   },
+   {
+    "name": "HVAC Pressure Switch-PS050",
+    "img": "assets/img/products/050-rjtp49neri2a1bz836u1p823fj8hv3jf5mv3kpi3xs.png",
+    "desc": "The PS050 Pressure Switch is designed to accurately control compressor pressure in refrigeration systems and is also suitable for air and water applications. Featuring a durable internal micro-switch structure, it delivers stable and reliable performance. Supplied with a standard mounting bracket for easy installation, the PS050 is an ideal solution for HVAC and industrial pressure control systems.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2026/02/PS050.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Air Differential Pressure Sensor – TXADP12",
+    "img": "assets/img/products/ADP12-rip4f2mv7ww8z2wooy7aawxbf4yus7yld333qi3fxs.png",
+    "desc": "The “NEOWAVE TXADP12” micro differential pressure sensor” is our newest invention for measuring pressure differences. It can be easily adjusted in the field because of its multi-range sensor and a simple switch. It comes in a protective case and has a stainless steel connector for easy wiring. This device is great for many uses, like controlling heating and cooling, managing energy, and maintaining air quality in places like clean rooms, kitchens, and industrial facilities.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/03/TxADP12.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2024/03/TxADP12-user-manual.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Differential Pressure Switch – DPS52A",
+    "img": "assets/img/products/DPS52A-1-rgsjkl72a2y8htv5m8i44l9cy5pdp9je1fj3zd3z3k.png",
+    "desc": "The DPS52A is an adjustable differential pressure switch engineered for diverse monitoring and control applications. It provides a reliable, low-maintenance alternative to mechanical paddle flow switches, particularly in chiller systems where it eliminates the need for frequent yearly replacements.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/DPS52A-1.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/DPS52A-user-manual.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Differential Pressure Switch – DPS18",
+    "img": "assets/img/products/DPS18-IMAGE-e1750929961584-r7vccg1n32ak2s6sx2zrkxb5o3ttx73t1tj2tbwar4.png",
+    "desc": "The DPS18 is a differential pressure switch that can detect even the slightest pressure variations, due to its small size and reliable design. Its set point or switching point can be adjusted in the field without the need for a manometer, using the adjustment knob and the integrated calibrated visual scale. Additionally, this switch comes with a clear cover that serves as protection against any potential damage.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/DPS18-4.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/DPS18-USER-MANUAL-new.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Differential Pressure Sensor- TxDP405",
+    "img": "assets/img/products/TxDP405-IMAGE-r7v6pt07puw754j96zo7jk6rcom5i9n06ufp8ucq5s.png",
+    "desc": "NEOWAVE TxDP405 differential pressure Sensor employs silicon piezoresistive differential pressure sensors as its core components, generating standard industrial signals via temperature compensation, digital circuit correction, and signal conditioning. Featuring an all-stainless steel shell for robust corrosion resistance, this product showcases advanced design, flawless technology, and stable reliability, finding extensive utility in industrial process control, flow measurement, medical instruments, aerodynamic measurement, hydraulic, pneumatic equipment, and beyond.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/TxDP405-1-1.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/TxDP405-USER-MANUAL.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Low Differental Pressure TxLDP16",
+    "img": "assets/img/products/15-qx1xde3hoz8lvqhehk14afp4t8d3rjd3wmjmiohpww.jpg",
+    "desc": "NEOWAVE TxLDP16 is versatile and low-cost pressure sensor controller that can be used for various applications such as air conditioning, ventilation, airflow management, lab regulation, and environmental protection. It excels in monitoring low-pressure applications with non-corrosive gases and is ideal for energy management systems.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/TxLDP16-1-1.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/TxLDP16-user-manual.pdf"
+     }
+    ]
+   }
+  ],
+  "pdfs": []
+ },
+ "level-measuring": {
+  "items": [
+   {
+    "name": "Tuning fork level switch-TxVF79",
+    "img": "assets/img/products/TxVF79-1-rm9tu88zgvuag60mf15d97w377fzedxec1ygo7e640.png",
+    "desc": "TxVF79 Tuning Fork Level Switch is used to detect the level of liquids and bulk materials inside tanks. It operates using vibration technology to ensure accurate and stable measurement, with a built-in self-check feature to reduce false alarms.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2026/04/TxVF79.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Radar Level Sensor – Premium (80GHz)",
+    "img": "assets/img/products/TxRLs-1-rip0pnfl4i90zopls9zpdkzvw6l86wa7opfxejx75c.png",
+    "desc": "76-81GHz frequency modulated continuous wave (FMCW) radar products support four-wire and two-wire applications. Multiple models, the maximum range of the product can reach 120m, and the blind zone can reach 10 cm. Because it operates at a higher frequency and shorter wavelength, itis especially suitable for solid-state applications. The way it emits and receives electromagnetic waves through a lens has unique advantages in high-dust, harsh temperature environments(+200°C). The instrument provides flange or thread fixation methods, making installation convenient and easy.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2026/02/Premium-level-sensor-radar-80GHZ.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Standard Radar Level Sensor (26GHz)- TxRLs Series",
+    "img": "assets/img/products/TxRLs-rip0fjo1nmf26ldzser32msi02e6g163aoz0ogwk1c.png",
+    "desc": "The radar water level gauge TxRLs series features advanced frequency-modulated continuous wave (FMCW) radar technology operating at 76-81GHz. These devices offer a maximum measurement range of up to 65 meters, with a minimal blind spot of just 10 centimeters. With a higher operating frequency, wider bandwidth, and enhanced measurement accuracy, these gauges deliver reliable and precise performance. Additionally, the product is designed with a convenient bracket mounting system, eliminating the need for on-site wiring and ensuring a quick and straightforward installation process",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2026/02/TxRLs-Radar-Level-Sensor-1.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Submersible Liquid Level Transducer – TxSL20",
+    "img": "assets/img/products/16-qx1xvrtvccegx7s75i2h1spn0hriagc53ltgdh8k8g.png",
+    "desc": "The NEOWAVE TxSL20 is a submersible liquid level transducer utilizing a high-performance pressure sensor for precise depth measurement. With submersible pressure sensors, it converts measurements into standard output signals via a specialized circuit, ensuring accuracy. Featuring high precision, compact size, and ease of use, it’s ideal for measuring liquid levels in various industries like petroleum, chemical, power plants, urban water supply, and hydro-logical exploration",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/TxSL20-1.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Liquid Temperature and Level 2 in 1 Sensor – TxTL93",
+    "img": "assets/img/products/23-qkgld0dhrm4ndam7v50kjnohhnjgft6ccqb1bctfu8-qx148ag9tr3jrmd0i2rbd68cfb90p2i6c223ss06ls.png",
+    "desc": "The NeoWave TxTL93 liquid temperature and level 2-in-1 sensor uses advanced piezoresistive pressure and PT-100 temperature sensors. It converts signals into standard outputs with digital temperature compensation, a wide operating range, and reliable performance. Designed for liquid level and temperature monitoring in various systems.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/TxTL93.pdf"
+     }
+    ]
+   }
+  ],
+  "pdfs": []
+ },
+ "flow-sensors-air-liquid": {
+  "items": [
+   {
+    "name": "FLOAT SWITCH-FS03",
+    "img": "assets/img/products/FS03-rjtpan0132s8q6q2vxz0lm6kdju218txd61ko821rk.png",
+    "desc": "FS03 Float Switch Easily control liquid levels in barrels, tanks, and wells with the FS03 Float Switch. Automatic, reliable, and simple to install, it requires no maintenance and is safe, non-toxic, and eco-friendly. Resistant to sewage and harsh liquids, it’s perfect for domestic, industrial, and mining applications—including oil, acid, and alkali tanks, sinks, and more.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2026/02/FS03.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Liquid Flow Switch – LFS22",
+    "img": "assets/img/products/LFS22-1-rip6ebsfasfr2xenm905tfm8jnrja7u2trf6emg29c.png",
+    "desc": "The LFS22 series liquid flow switch is crafted to regulate fluctuations in liquid flow within pipes, accommodating various liquids like water, ethylene glycol, or other non-hazardous fluids. When the liquid flow exceeds or falls below the set threshold, the single-pole double-throw contacts (SPDT) can establish a connection in one circuit while simultaneously interrupting another. The LFS22 series liquid flow switch is typically employed for chain reaction or “no flow” safeguarding purposes.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/LFS22-2.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/LFS22-USER-MANUAL.pdf"
+     }
+    ]
+   }
+  ],
+  "pdfs": []
+ },
+ "smart-thermostat": {
+  "items": [
+   {
+    "name": "VAV (Variable Air Volume) Thermostat-VTRM20-XP",
+    "img": "assets/img/products/Untitled-1_0010_Vector-Smart-Object-quwmva6axxwte55lkh4jm0ibj62wsuz3smax4zplrk.jpg",
+    "desc": "",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/09/VTRM20-XP-2.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Smart Thermostat – TRM Series",
+    "img": "assets/img/products/TERM-quoiunfr2uwt7vc7ybzf0u8rsxi52sk13x9okuw7sg.jpg",
+    "desc": "Elevate your comfort with TRM smart thermostats, offering precise control over room temperature and boasting a collection of stunning designs to enhance any space with both elegance and efficiency",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/03/TRM.pdf"
+     }
+    ]
+   }
+  ],
+  "pdfs": []
+ },
+ "damper-actuators": {
+  "items": [
+   {
+    "name": "Fail Safe Damper Actuator",
+    "img": "assets/img/products/DAMS-rg7lqc7zw4qes5opxktx6tzvaeoj4wkivkh0sf9h0w.png",
+    "desc": "This actuator is specially designed for precise control of dampers in HVAC systems and equipment. It ensures reliable operation, easy installation, and flexible configuration for various damper sizes and control modes",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/12/Fail-Safe-Actuator-Damper.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2025/12/DAM05S-User-Manual.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Damper Actuator 5Nm – DAM05",
+    "img": "assets/img/products/Untitled-1_0009_Vector-Smart-Object-quwn2r058k4tmmb3ypbuf4o5fd9vyamc5kvse4n0c0.jpg",
+    "desc": "The NeoWave DAM05 Actuator is designed for precise control of HVAC system dampers. It offers easy assembly with self-centering adapters, adjustable mechanical limits, and manual operation for convenience.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/09/DAM05-1.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Damper Actuator 10Nm-DAM10",
+    "img": "assets/img/products/Untitled-1_0009_Vector-Smart-Object-quwn2r058k4tmmb3ypbuf4o5fd9vyamc5kvse4n0c0.jpg",
+    "desc": "The NeoWave DAM10 Actuator is designed for precise control of HVAC system dampers. It offers easy assembly with self-centering adapters, adjustable mechanical limits, and manual operation for convenience.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/09/DAM10-1.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Damper Actuator 20Nm-DAM20",
+    "img": "assets/img/products/Untitled-1_0009_Vector-Smart-Object-quwn2r058k4tmmb3ypbuf4o5fd9vyamc5kvse4n0c0.jpg",
+    "desc": "The NeoWave DAM20 Actuator is designed for precise control of HVAC system dampers. It offers easy assembly with self-centering adapters, adjustable mechanical limits, and manual operation for convenience.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/09/DAM20-1.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Damper Actuator 40Nm-DAM40",
+    "img": "assets/img/products/Untitled-1_0009_Vector-Smart-Object-quwn2r058k4tmmb3ypbuf4o5fd9vyamc5kvse4n0c0.jpg",
+    "desc": "The NeoWave DAM40 Actuator is designed for precise control of HVAC system dampers. It offers easy assembly with self-centering adapters, adjustable mechanical limits, and manual operation for convenience.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/09/DAM40-1.pdf"
+     }
+    ]
+   }
+  ],
+  "pdfs": []
+ },
+ "btu-meters": {
+  "items": [
+   {
+    "name": "BTU Meter DN50-400 – UTM22",
+    "img": "assets/img/products/UTM22_DN50-qm0h0crqm8r2kvh8rarxzdzhlvt5ylybf7e2bxxmk0.png",
+    "desc": "UTM22 Ultrasonic BTU Meter is an innovative BTU Meter with static flow sensor based on the ultrasonic measuring principle. UTM22 is designed for measuring the use of heating/cooling in which water is the heat / cool bearing medium.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/03/UTM-DN-50-400.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2024/03/UTM22-DN50-400-Ultrasonic-Heat-Meter_User-Guide.pdf"
+     }
+    ]
+   },
+   {
+    "name": "BTU Meter DN15-40 – UTM22",
+    "img": "assets/img/products/9-qko1mvlkrd0rt40xpb0381128v53il8n6qhq430228.jpg",
+    "desc": "UTM22 Ultrasonic BTU Meter is an innovative BTU Meter with static flow sensor based on the ultrasonic measuring principle. UTM22 is designed for measuring the use of heating / cooling in which water is the heat / cool bearing medium.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/03/UTM22-1.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2024/03/UTM22-Ultrasonic-Heat-Meter_User-Guide-1.pdf"
+     }
+    ]
+   }
+  ],
+  "pdfs": []
+ },
+ "water-meters": {
+  "items": [
+   {
+    "name": "Electromagnetic Flow Meter – EMF 5X Series",
+    "img": "assets/img/products/EMF-5X.pdf-1-riozbt1ops0nc341u8cwnnsxvm9j0pemi0209btr3k.png",
+    "desc": "The intelligent electromagnetic flowmeter is a reliable device designed for accurate measurement of conductive liquid flow in industrial applications. It offers stable performance, high accuracy, and strong resistance to external interference. The advanced sensor design ensures consistent operation, making it suitable for a wide range of fluids such as water, wastewater, acids, alkalis, and other conductive liquids.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2026/02/EMF-5X.pdf.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2026/02/Electromagnetic-Flowmeter-Integrated-Type250119.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Ultrasonic Water Meter – UTW19-DN50-900",
+    "img": "assets/img/products/Untitled-design-6-rfy7bcef1v4qw2602etyo63so342u8x9vcb0kj40a8.png",
+    "desc": "The UTW19 Ultrasonic Water Meter is a next-generation residential meter, offering advanced features like lower power consumption by 18%, multiple communication interfaces (e.g., LoRaWAN, NB-IoT), and a robust, maintenance-free design with up to 16 years of battery life.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2025/05/UTW19-DN50-900-USER-MANUAL.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Electromagnetic Flow Meter – EMFM3",
+    "img": "assets/img/products/25252-3-qx35gr1l5u7qd6r6f78yjddb9egxmc2l5brtjswc4w-removebg-preview-qx5615xjnietxw2trfj7f4yqzm7smd67nkncazg2uo.png",
+    "desc": "Electromagnetic Flowmeters EMFM3 are used in Electromagnetic Flowmeters various ways. Large ones are for water supply and drainage. Medium and small ones handle demanding tasks, like cooling water control in steel mills or measuring liquids in the paper and chemical industries. They also work with corrosive substances in metallurgy and in hygienic environments like the pharmaceutical and food industries.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/09/Electromagnetic-Flowmeters-EMFM3.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Ultrasonic Water Meter – UTW19-DN15-40",
+    "img": "assets/img/products/Screenshot-2024-09-25-163938-qumphoy11vw0cb54kr4ww3mr0kxnr2h4lv23o9ndkg.png",
+    "desc": "The UTW19 Ultrasonic Water Meter is a next-generation residential meter, offering advanced features like lower power consumption by 18%, multiple communication interfaces (e.g., LoRaWAN, NB-IoT), and a robust, maintenance-free design with up to 16 years of battery life.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/09/UTW19-2.pdf"
+     },
+     {
+      "label": "Manual",
+      "url": "https://neowave.tech/wp-content/uploads/2024/09/UTW19-User-Manual-8.pdf"
+     }
+    ]
+   }
+  ],
+  "pdfs": []
+ },
+ "fire-alarm-systems": {
+  "items": [
+   {
+    "name": "Fire Alarm Systems – Catalog",
+    "img": "assets/img/products/fire-alarm-system-installers-hampshire-qko4g1y6edivi327wjff3zw84ygf1pwirig8razib4.jpg",
+    "desc": "Neo Wave offers a diverse range of fire alarm systems and accessories, including Conventional Fire Alarm Systems, Addressable Fire Alarm Systems, and Wireless Addressable Fire Alarm Systems. Additionally, it features the GAS Extinguisher Release Control System, Standalone Detectors, Tuya WiFi Standalone Detectors, RF Wireless Standalone Detectors, and Gas, CO2 & CO Detectors. Each system offers specific functionalities and features tailored to various safety and security needs, providing a comprehensive array of fire alarm solutions.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/03/Fire-Alarm-Systems-FA2.pdf"
+     }
+    ]
+   }
+  ],
+  "pdfs": []
+ },
+ "lpg-natural-gas-detectors": {
+  "items": [
+   {
+    "name": "GEV 500",
+    "img": "assets/img/products/WhatsApp-Image-2024-02-20-at-10.24.29-AM-qk2scfgfbwj8rgl7yz0ncsdmj5smgkvb0od7lubqls.jpeg",
+    "desc": "The GEV500 by Neowave is a series of gas emergency shut-off solenoid valves designed as breakers for gas pipes in emergencies. It can connect with gas leakage sensors, fire alarms, or other intelligent modules,allowing on-site or remote gas supply shutdown for enhanced safety.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/GEV500.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Natural LPG Gas Detector NGD500",
+    "img": "assets/img/products/NGD500-product-qk2rb8y8ztmxiqlh2wfwq658mh1xzl9j8nds7tgcq8.png",
+    "desc": "NGD500 is a standalone detector designed to identify dual gases such as combustible gas (natural gas, LPG), CO gas, and indoor temperature. It incorporates an LED display and voice alert system. The device is outfitted with a high-precision gas sensor, ensuring excellent repeatability for accurate gas detection.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/NGD500.pdf"
+     }
+    ]
+   },
+   {
+    "name": "Natural LPG Gas Detector NGD300",
+    "img": "assets/img/products/product-qjwwdqtrp8pbcil0t2fi4v4urqgry0kywaouwaf14g.png",
+    "desc": "The NGD300, a newly introduced independent combustible gas detector by Neowave, operates on AC power and is designed for backside installation. This advanced gas detector is engineered to enhance the safety of users’ properties and individuals by mitigating the risks associated with combustible gases.",
+    "docs": [
+     {
+      "label": "Datasheet",
+      "url": "https://neowave.tech/wp-content/uploads/2024/02/NGD300.pdf"
+     }
+    ]
+   }
+  ],
+  "pdfs": []
+ }
+}

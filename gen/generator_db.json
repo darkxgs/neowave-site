@@ -1,0 +1,496 @@
+{
+ "categories": [
+  {
+   "category_id": "hvac-control",
+   "name": "HVAC control",
+   "types": [
+    {
+     "id": "smart-thermostat",
+     "name": "Smart Thermostat"
+    },
+    {
+     "id": "damper-actuators",
+     "name": "Damper Actuators"
+    }
+   ]
+  },
+  {
+   "category_id": "io-modules",
+   "name": "I/O modules and data transmission",
+   "types": [
+    {
+     "id": "industrial-switches",
+     "name": "Industrial switches"
+    },
+    {
+     "id": "io-modules",
+     "name": "I/O modules"
+    }
+   ]
+  },
+  {
+   "category_id": "life-safety",
+   "name": "Life Safety Systems",
+   "types": [
+    {
+     "id": "fire-alarm",
+     "name": "Fire Alarm Systems"
+    },
+    {
+     "id": "gas-detectors",
+     "name": "LPG & Natural Gas Detectors"
+    }
+   ]
+  },
+  {
+   "category_id": "power-energy",
+   "name": "Power & Energy",
+   "types": [
+    {
+     "id": "btu-meters",
+     "name": "BTU Meters"
+    },
+    {
+     "id": "water-meters",
+     "name": "Water Meters"
+    }
+   ]
+  },
+  {
+   "category_id": "sensors-switches",
+   "name": "Sensors and Switches",
+   "types": [
+    {
+     "id": "temp-humid",
+     "name": "Temperature and humidity"
+    },
+    {
+     "id": "air-quality",
+     "name": "Air Quality"
+    },
+    {
+     "id": "pressure",
+     "name": "Pressure (Air & liquid)"
+    },
+    {
+     "id": "level",
+     "name": "Level Measuring"
+    },
+    {
+     "id": "flow",
+     "name": "Flow sensors (Air & liquid)"
+    }
+   ]
+  }
+ ],
+ "products": [
+  {
+   "id": "2970cb93-b877-4013-a118-4780d2801e33",
+   "code": "AQS820",
+   "type": "Air Quality",
+   "category": "accessories",
+   "name": "Air Quality Sensor",
+   "description": "Air Quality Sensor - Standard model for Air Quality",
+   "specifications": {
+    "Output": "V5=0-5V, V10=0-10V, A=4-20mA, RS=RS485/Modbus"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "6d9c2d44-24a7-4663-a5ce-aae4e120d90d",
+   "code": "TxAQ37",
+   "type": "Air Quality",
+   "category": "accessories",
+   "name": "All-in-One Air Quality Transducer",
+   "description": "All-in-One Air Quality Transducer - Standard model for Air Quality",
+   "specifications": {
+    "Pm": "1, 2",
+    "Co2": "1, 2",
+    "Voc": "1, 2",
+    "TempRH": "1, 2",
+    "Display": "1, 2",
+    "OutputType": "RSN, RS",
+    "Formaldehyde": "1, 2",
+    "Installation": "1, 2",
+    "IndicationLight": "1, 2"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "b883f266-05c8-4a2d-b98e-759a9c1ee371",
+   "code": "TxCDD34",
+   "type": "Air Quality",
+   "category": "accessories",
+   "name": "Ducted CO2 monitor",
+   "description": "Ducted CO2 monitor - Standard model for Air Quality",
+   "specifications": {
+    "Output": "5V=0-5V, 10V=0-10V, A=4-20mA, RS=RS485",
+    "MeasureRange": "2=2000ppm, 5=5000ppm"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "8e2b3419-6d7c-4ac6-ba12-a56c3f3260fa",
+   "code": "TxCDI35",
+   "type": "Air Quality",
+   "category": "accessories",
+   "name": "Indoor CO2 monitor",
+   "description": "Indoor CO2 monitor - Standard model for Air Quality",
+   "specifications": {
+    "Output": "V5=0-5V, V10=0-10V, A=4-20mA, RS=RS485/Modbus",
+    "Display": "1=Without digital display, 2=With digital display",
+    "MeasureRange": "2=2000ppm, 5=5000ppm"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "c983fd44-e231-450f-b7e1-a69006c639b9",
+   "code": "TxCDT380",
+   "type": "Air Quality",
+   "category": "accessories",
+   "name": "TxCDT380 - Carbon Dioxide (CO2) & Temperature (Wall and Duct)",
+   "description": "TxCDT380 - Carbon Dioxide (CO2) & Temperature (Wall and Duct) - Standard model for Air Quality",
+   "specifications": {
+    "Display": "1, 2",
+    "Co2Output": "VA, RS",
+    "TempOutput": "VA, 1, 2, 3, 4, 5, 6, 7, RS"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "06d7b3bc-d8e0-44b2-9810-1f8210526150",
+   "code": "TxCDW33",
+   "type": "Air Quality",
+   "category": "accessories",
+   "name": "Wall Mounted CO2 monitor",
+   "description": "Wall Mounted CO2 monitor - Standard model for Air Quality",
+   "specifications": {
+    "Output": "V5=0-5V, v10=0-10V, A=4-20mA, RS=RS485/Modbus",
+    "MeasureRange": "2=2000ppm, 5=5000ppm, 10=10000ppm"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "e3dcaef4-d8a7-44b4-9eeb-9a4d99c172db",
+   "code": "TxCOI32",
+   "type": "Air Quality",
+   "category": "accessories",
+   "name": "Indoor Carbon Monoxide (CO)",
+   "description": "Indoor Carbon Monoxide (CO) - Standard model for Air Quality",
+   "specifications": {
+    "Relay": "1, 2",
+    "Output": "AV, RS",
+    "Display": "1, 2",
+    "MeasureRange": ""
+   },
+   "photo_url": null
+  },
+  {
+   "id": "94cf8a9e-e00a-4473-a726-4e8fa2090495",
+   "code": "TxCOW31",
+   "type": "Air Quality",
+   "category": "accessories",
+   "name": "Wall-Mounted Carbon Monoxide (CO)",
+   "description": "Wall-Mounted Carbon Monoxide (CO) - Standard model for Air Quality",
+   "specifications": {
+    "Output": "V5=0-5V, V10=0-10V, A=4-20mA, RS=RS485/Modbus",
+    "MeasureRange": "1=500ppm, 2=1000ppm"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "566f2646-fb6f-42c2-a528-483abbdbb573",
+   "code": "LFS22",
+   "type": "Flow sensors (Air & liquid)",
+   "category": "accessories",
+   "name": "Liquid Flow Switch",
+   "description": "Liquid Flow Switch - Standard model for Flow sensors (Air & liquid)",
+   "specifications": {
+    "Material": "1=Brass (for water or other liquids suitable for brass), 2=Stainless steel (for ammonia and other liquids suitable for stainless steel)",
+    "ConnectionSize": "1=1\"\"NPT Size, 2=2/1\"\"NPT, 3=4/3\"\"NPT"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "d69dd445-cc4f-43ba-a2d3-95e8eb95c2a7",
+   "code": "TxSL20",
+   "type": "Level Measuring",
+   "category": "accessories",
+   "name": "TxSL20 - Submersible Liquid Level Tranducer",
+   "description": "TxSL20 - Submersible Liquid Level Tranducer - Standard model for Level Measuring",
+   "specifications": {
+    "Unit": "M, CM",
+    "Output": "A, V0, V5, V10, RS",
+    "Display": "1, 2",
+    "Accuracy": "0.5",
+    "CableLength": "1, 2",
+    "ElectricalConnection": "M"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "ff3f81f6-44af-43de-ac7c-38ef533c2967",
+   "code": "TxSL22",
+   "type": "Level Measuring",
+   "category": "accessories",
+   "name": "TxSL22 - Liquid Temperature and Level 2 in 1 Tranducer",
+   "description": "TxSL22 - Liquid Temperature and Level 2 in 1 Tranducer - Standard model for Level Measuring",
+   "specifications": {
+    "Unit": "M=M=Meter, CM=CM=Centimeter",
+    "Range": "200=0~1...200mH2O",
+    "Output": "A=4-20mA, V0=0.5-4.5V, RS=RS485",
+    "Accuracy": "0.5=0.5 = 0.5%F.S.",
+    "TempRange": "100=-20~100°C",
+    "CableLength": "1=1.0=1m, 2=2.0=2m, 3=3.0=3m",
+    "ElectricalConnection": "M=M=M12 waterproof outlet"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "80fd948a-2470-4ec9-a0b4-42d993174a50",
+   "code": "DPS18",
+   "type": "Pressure (Air & Liquid)",
+   "category": "accessories",
+   "name": "DPS18",
+   "description": "DPS18 - Standard model for Pressure (Air & Liquid)",
+   "specifications": {
+    "PressureRange": "01=20-200 Pa, 02=30-300 Pa, 03=40-400 Pa, 04=50-500 Pa, 05=200-1000 Pa, 06=100-1000 Pa, 07=500-2500 Pa, 08=1000-5000 Pa"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "80ecd99f-f8b8-4fb8-8bb2-966cff196622",
+   "code": "DPS52",
+   "type": "Pressure (Air & Liquid)",
+   "category": "accessories",
+   "name": "DPS52",
+   "description": "DPS52 - Standard model for Pressure (Air & Liquid)",
+   "specifications": {
+    "Wiring": "1, 2",
+    "ConnectorThread": "1, 2, 3, 4, 5, 6, 7",
+    "ConnectorMaterial": "1, 2"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "47020595-c6a3-4ef8-8abf-47e354fdf32a",
+   "code": "TXADP12",
+   "type": "Pressure (Air & Liquid)",
+   "category": "accessories",
+   "name": "TXADP12",
+   "description": "TXADP12 - Standard model for Pressure (Air & Liquid)",
+   "specifications": {
+    "Output": "AV=4-20mA/0-10VDC (Simultaneous output), A=4-20mA (Two-wired), V10=0-10VDC (Three-wired), V5=0-5VDC (Three-wired), RS=RS-485 communication, RSW=RS-485 communication (with isolation)",
+    "Display": "1=Without Display, 2=With Display",
+    "PressureRange": "2=-100~100pa, 4=-1000~1000Pa, 6=-10000~10000Pa"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "60edae51-2e39-4d09-84ab-c46969b5fc44",
+   "code": "TxDP35",
+   "type": "Pressure (Air & Liquid)",
+   "category": "accessories",
+   "name": "TxDP35",
+   "description": "TxDP35 - Standard model for Pressure (Air & Liquid)",
+   "specifications": {
+    "Unit": "K, P, B, M",
+    "Output": "A, V10, RS",
+    "Accuracy": "0.25, 0.5",
+    "CableLength": "1, 2, 3",
+    "PressureConnection": "G, N, G2, M20, M14, M10, U, R",
+    "ElectricalConnection": "D, M, C3, C4, H"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "885e4f40-b7e8-417e-b799-f038613d9723",
+   "code": "TxLDP16",
+   "type": "Pressure (Air & Liquid)",
+   "category": "accessories",
+   "name": "TxLDP16",
+   "description": "TxLDP16 - Standard model for Pressure (Air & Liquid)",
+   "specifications": {
+    "Output": "A=4-20mA (Two-wired), V10=0-10VDC (Three-wired), V5=0-5VDC (Three-wired), RS=RS485, RsV10=RS485, 0-10VDC, RsV5=RS485, 0-5VDC, RsA=RS485, 4-20mA",
+    "PressureRange": "101D=0±100Pa (two-way), 101G=0-100Pa (one-way), 102D=0±1000Pa, 102G=0-1000Pa, 251D=0±250Pa, 251G=0-250Pa, 252D=0±2500Pa, 252G=0-2500Pa, 051D=0±50Pa, 051G=0-50Pa, 501D=0±500Pa, 501G=0-500Pa, 502D=0±5000Pa, 502G=0-5000Pa, 103D=0±10000Pa"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "99ebb439-548e-4865-8e45-abe81dc2e696",
+   "code": "VTRM20-XP",
+   "type": "Smart Thermostat",
+   "category": "accessories",
+   "name": "VAV (Variable Air Volume) controllers",
+   "description": "VAV (Variable Air Volume) controllers - Standard model for Smart Thermostat",
+   "specifications": {
+    "Color": "B=Black, W=White",
+    "Output": "1=No Output Options, 2=24V Relay Output",
+    "Interface": "1=No Interface, 2=Colour Capacitive Touchscreen, 3=Bluetooth App Interface, 4=Touchscreen and Bluetooth, 5=LoraWan Wireless Interface, EU868Mhz, 6=LoraWan Wireless Interface EU868MHz with Touchscreen",
+    "Measurement": "1=No Extra Measurements, 2=Relative Humidity, 3=Volatile Organic Compound and Humidity, 4=Passive Infrared Movement (PIR), 5=Relative Humidity and Movement (PIR), 6=VOC, Relative Humidity and Movement (PIR)",
+    "Communication": "1=MOD Modbus RS485, 2=BAC BACnet MS/TP"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "4be62462-2f0f-40b6-92d6-7c90699982cc",
+   "code": "CTH27-3-V10-V10-1-2-1",
+   "type": "Temperature and humidity",
+   "category": "accessories",
+   "name": "CTH27 Indoor Temperature Humidity Controller",
+   "description": "CTH27 Indoor Temperature Humidity Controller - Custom model",
+   "specifications": {
+    "Display": "CTH272=Setting button, backlight LCD display with unit",
+    "Accuracy Range": "CTH273=±3%RH(±0.5°C)",
+    "Alarm and relay": "CTH271=Alarm only, CTH272=Relay only, CTH273=Alarm and relay",
+    "Humidity Output": "CTH27V10=0~10VDC(3-wire), CTH27RS=RS485/Modbus",
+    "Temperature Range": "CTH271=NO , CTH272=0~50°C, CTH273=-20~60°C, CTH279=Others ( customerized)",
+    "Temperature Output": "CTH27V10=0~10VDC(3-wire), CTH27RS=RS485/Modbus, CTH271=Pt100, ±0.2°C@0°C, CTH272=Pt1000, ±0.2°C@0°C , CTH273=NTC10K, ±0.4°C@25°C, CTH274=NTC20K, ±0.4°C@25°C"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "57751798-a6b0-4d6a-beb5-1bc278795b9e",
+   "code": "TxT02-W-V10-1-1",
+   "type": "Temperature and humidity",
+   "category": "accessories",
+   "name": "TxT02 Temperature Sensor",
+   "description": "TxT02 Temperature Sensor - Custom model",
+   "specifications": {
+    "Model": "TxT02W=Wall-mounted, TxT02D=Duct type, TxT02C=Clamp type, TxT02S=Separated type, TxT02P=Tube type/ water pipe type",
+    "Probe Length": "TxT021=65MM, TxT022=100MM, TxT023=150MM, TxT024=200MM, TxT029=Others (customerized)",
+    "Temperature Range": "TxT021=NO, TxT022=0~50°C, TxT023=20~60°C, TxT029=Others (customerized)",
+    "Temperature Output": "TxT02V10=0~10VDC(3-wire), TxT02A=4~20mA(2-wire), TxT02V5=0~5VDC(3 wire), TxT021=Pt100, ±0.2°C@0°C, TxT022=Pt1000, ±0.2°C@0°C, TxT023=NTC20K, ±0.4°C@25°C, TxT024=Ni 1000, ±0.4°C@25°C, TxT025=NTC10K-II,±0.4°C@25°C, TxT026=NTC10K-III,±0.4°C@25°C, TxT027=NTC10K-A,±0.4°C@25°C"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "62731297-045e-4523-9c24-9c3df7756c32",
+   "code": "TxTA03-V10-25-1-1-G2-1-1-1",
+   "type": "Temperature and humidity",
+   "category": "accessories",
+   "name": "TxTA03 Armored Temperature Sensor",
+   "description": "TxTA03 Armored Temperature Sensor - Custom model",
+   "specifications": {
+    "Accuracy": "TxTA0325=0.25%FS , TxTA0350=0.5%FS",
+    "Code End": "TxTA031=Without cold end (15mm) , TxTA032=Cold end length 100mm) , TxTA039=Customized",
+    "Wiring Box": "TxTA031=Wiring Box",
+    "Protective Tube": "TxTA031=Without, TxTA032=With",
+    "Temperature Range": "TxTA031=0~100℃ , TxTA032=0~200℃ (with cold end) , TxTA033=0~300℃ (with cold end) , TxTA034=-50~150℃ (with cold end) , TxTA035=-50~300℃ (with cold end) , TxTA039=customized (-50~300℃)",
+    "Temperature Output": "TxTA03V10=0~10VDC(3-wire), TxTA03A=4~20mA(2-wire), TxTA03RS=RS485/Modbus , TxTA031=Pt100, ±0.2°C@0°C, TxTA032=Pt1000, ±0.2°C@0°C",
+    "Installation Method": "TxTA03G2=G1/2 male (fixed thread installation, TxTA03G4=G1/4 male (fixed thread installation) , TxTA03M=M16*1.5 male (fixed thread installation) , TxTA03M2=M20*1.5 male (fixed thread installation) , TxTA03M7=M27*2 male (fixed thread installation) , TxTA03C=Clamp (50.5MM) , TxTA03D=Direct Insert Type",
+    "Probe length (without thread)": "TxTA031=30mm (Sleeved Type ), TxTA032=50mm (Sleeved Type ), TxTA033=100mm (Sleeved Type ), TxTA034=150mm (Sleeved Type ), TxTA035=200mm (Sleeved Type ), TxTA036=300mm (Sleeved Type ), TxTA039=customized (Sleeved Type ), TxTA031D=130mm (Direct Insert Type ), TxTA032D=200mm (Direct Insert Type ), TxTA033D=250mm (Direct Insert Type ), TxTA034D=300mm (Direct Insert Type ), TxTA035D=400mm (Direct Insert Type ), TxTA039D=customized (Direct Insert Type )"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "813fd678-b0e3-4619-b4fd-684cfa014433",
+   "code": "TxTH05-W-2-V10-V10-1-1",
+   "type": "Temperature and humidity",
+   "category": "accessories",
+   "name": "TxTH05 Temperature and Humidity Sensor – Duct & Wall",
+   "description": "TxTH05 Temperature and Humidity Sensor – Duct & Wall - Custom model",
+   "specifications": {
+    "Model": "TxTH05W=Wall-mounted, TxTH05D=Duct, TxTH05S=Split",
+    "Display Mode": "TxTH051=No display, TxTH052=LCD display",
+    "Accuracy Range": "TxTH052=±2%RH(0.3℃), TxTH053=±3%RH(0.3℃)",
+    "Humidity Output": "TxTH05V10=0~10VDC(3-wire), TxTH05A=4~20mA(2-wire), TxTH05RS=RS485/Modbus",
+    "Temperature Range": "TxTH051=NO , TxTH052=0~50°C, TxTH053=-20~60°C, TxTH059=Others ( customerized)",
+    "Temperature Output": "TxTH05V10=0~10VDC(3-wire), TxTH05A=4~20mA(2-wire), TxTH05RS=RS485/Modbus, TxTH051=Pt100, ±0.2°C@0°C, TxTH052=Pt1000, ±0.2°C@0°C , TxTH053=NTC20K，±0.4℃@25℃, TxTH054=Ni 1000，±0.4℃@25℃, TxTH055=NTC10K-II, ±0.4℃@25℃, TxTH056=NTC10K-III, ±0.4℃@25℃, TxTH057=NTC10K-A, ±0.4℃@25℃"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "b2f0c41d-8529-40a7-979e-cc7c881ca042",
+   "code": "TxTH29-W-3-V10-V10-1-1",
+   "type": "Temperature and humidity",
+   "category": "accessories",
+   "name": "TxTH29 Temperature & Humidity Sensor",
+   "description": "TxTH29 Temperature & Humidity Sensor - Custom model",
+   "specifications": {
+    "Model": "TxTH29W=Wall-mounted, TxTH29D=Duct, TxTH29S=Split",
+    "Display": "TxTH291=No display, TxTH292=LCD display",
+    "Accuracy Range": "TxTH293=±3%RH(±0.5°C)",
+    "Humidity Output": "TxTH29V10=0~10VDC(3-wire, TxTH29A=4~20mA(2-wire), TxTH29RS=RS485/Modbus",
+    "Temperature Range": "TxTH291=NO , TxTH292=0~50°C, TxTH293=-20~60°C, TxTH299=Others (customerized)",
+    "Temperature Output": "TxTH29V10=0~10VDC(3-wire, TxTH29A=4~20mA(2-wire), TxTH29RS=RS485/Modbus, TxTH291=Pt100, ±0.2°C@0°C, TxTH292=Pt1000, ±0.2°C@0°C , TxTH293=NTC10K，±0.4℃@25℃, TxTH294=NTC20K，±0.4℃@25℃"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "d1d1836f-9d45-4373-b7d7-f5066c0bc1c5",
+   "code": "TxTHI28-3-V10-V10-1-1",
+   "type": "Temperature and humidity",
+   "category": "accessories",
+   "name": "TxTHI28 Indoor Temperature Humidity Sensor",
+   "description": "TxTHI28 Indoor Temperature Humidity Sensor - Custom model",
+   "specifications": {
+    "Display": "TxTHI281=without display, TxTHI282=with display",
+    "Accuracy Range": "TxTHI283=±3%RH(±0.5°C)",
+    "Humidity Output": "TxTHI28V10=0~10VDC(3-wire), TxTHI28A=4~20mA(2-wire), TxTHI28RS=RS485/Modbus, TxTHI28N=No output",
+    "Temperature Range": "TxTHI281=NO, TxTHI282=0~50°C, TxTHI283=-20~60°C, TxTHI289=Others (customerized)",
+    "Temperature Output": "TxTHI28V10=0~10VDC(3-wire), TxTHI28A=4~20mA(2-wire), TxTHI28RS=RS485/Modbus, TxTHI28N=No output, TxTHI281=Pt100, ±0.2°C@0°C, TxTHI282=Pt1000, ±0.2°C@0°C, TxTHI283=NTC10K, ±0.4°C@25°C, TxTHI284=NTC20K, ±0.4°C@25°C"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "b477d4a6-a366-4205-a367-692ae0f3819f",
+   "code": "TxTHM98-1",
+   "type": "Temperature and humidity",
+   "category": "accessories",
+   "name": "TxTHM98 Magnetic Temperature & Humidity Sensor",
+   "description": "TxTHM98 Magnetic Temperature & Humidity Sensor - Custom model",
+   "specifications": {
+    "Display": "TxTHM981=Without Dispaly, TxTHM982=With Dispaly"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "a2df9f06-8104-4e24-8529-14c191727097",
+   "code": "TxTHO23-3-V10-V10-1",
+   "type": "Temperature and humidity",
+   "category": "accessories",
+   "name": "TxTHO23 Outdoor Temperature And Humidity Sensor",
+   "description": "TxTHO23 Outdoor Temperature And Humidity Sensor - Custom model",
+   "specifications": {
+    "Accuracy Range": "TxTHO233=±3%RH(±0.5°C)",
+    "Humidity Output": "TxTHO23V10=0~10VDC(3-wire), TxTHO23A=4~20mA(2-wire), TxTHO23RS=RS485/Modbus",
+    "Temperature Range": "TxTHO231=NO , TxTHO232=0~50°C, TxTHO233=-20~60°C, TxTHO239=Others ( customerized)",
+    "Temperature Output": "TxTHO23V10=0~10VDC(3-wire), TxTHO23A=4~20mA(2-wire), TxTHO23RS=RS485/Modbus, TxTHO231=Pt100, ±0.2°C@0°C, TxTHO232=Pt1000, ±0.2°C@0°C , TxTHO233=NTC10K, ±0.4°C@25°C, TxTHO234=NTC20K, ±0.4°C@25°C"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "ffe72097-a675-4667-be53-053915779186",
+   "code": "TxTHP96-3-V10-V10-1",
+   "type": "Temperature and humidity",
+   "category": "accessories",
+   "name": "TxTHP96 Probe Type Temperature and Humidity Sensor",
+   "description": "TxTHP96 Probe Type Temperature and Humidity Sensor - Custom model",
+   "specifications": {
+    "Accuracy Range": "TxTHP963=±3%RH(±0.5°C)",
+    "Humidity Output": "TxTHP96V10=0~10VDC(3-wire), TxTHP96A=4~20mA(two wires), TxTHP96RS=RS485/Modbus",
+    "Temperature Range": "TxTHP961=NO, TxTHP962=0~50°C, TxTHP963=-20~60°C, TxTHP969=Others (customerized)",
+    "Temperature Output": "TxTHP96V10=0~10VDC(3-wire), TxTHP96A=4~20mA(two wires), TxTHP96A=RS485/Modbus"
+   },
+   "photo_url": null
+  },
+  {
+   "id": "e91946a4-cba9-405a-a83f-8acebef972b0",
+   "code": "TxTI04-V10-1-G2-1-1-1",
+   "type": "Temperature and humidity",
+   "category": "accessories",
+   "name": "TxTI04 Integrated Temperature Sensor",
+   "description": "TxTI04 Integrated Temperature Sensor - Custom model",
+   "specifications": {
+    "Display": "TxTI041=Without Display, TxTI042=With Display",
+    "Probe Length": "TxTI041=30mm (Integrated Type ), TxTI042=50mm (Integrated Type ), TxTI043=100mm (Integrated Type ), TxTI044=150mm (Integrated Type ), TxTI045=200mm (Integrated Type ), TxTI046=300mm (Integrated Type ), TxTI049=customized (Integrated Type ), TxTI041D=130mm (Direct Insert Type) , TxTI042D=200mm (Direct Insert Type) , TxTI043D=250mm (Direct Insert Type) , TxTI044D=300mm (Direct Insert Type ) , TxTI045D=400mm (Direct Insert Type) , TxTI049D=customized (Direct Insert Type)",
+    "Protective Tube": "TxTI041=without , TxTI042=with",
+    "Temperature Range": "TxTI041=0~100℃ , TxTI042=0-200°C , TxTI043=-50-50°C , TxTI044=-50-100°C , TxTI045=-50-200°C , TxTI049=customized (-50-200°C)",
+    "Temperature Output": "TxTI04V10=0~10VDC(3-wire), TxTI04A=4~20mA(2-wire), TxTI041=Pt100, ±0.2°C@0°C, TxTI042=Pt1000, ±0.2°C@0°C",
+    "Installation Method": "TxTI04G2=G1/2 male (fixed thread installation), TxTI04G4=G1/4 male (fixed thread installation) , TxTI04M=M20-1.5 male (fixed thread installation) , TxTI04C=clamp (50.5MM) , TxTI04D=Direct Insert Type"
+   },
+   "photo_url": null
+  }
+ ]
+}
