@@ -25,20 +25,13 @@ database-backed product code generator and its own admin.**
 
 ---
 
-## Contents
+<div align="center">
 
-- [Overview](#overview)
-- [Screenshots](#screenshots)
-- [Features](#features)
-- [Architecture](#architecture)
-- [Tech stack](#tech-stack)
-- [Project structure](#project-structure)
-- [Getting started](#getting-started)
-- [Build pipeline](#build-pipeline)
-- [Deployment](#deployment)
-- [Configuration](#configuration)
-- [Security](#security)
-- [Performance and SEO](#performance-and-seo)
+**[Overview](#overview)** · **[Before & after](#before--after)** · **[Screenshots](#screenshots)** · **[Features](#features)** ·
+**[Architecture](#architecture)** · **[Tech stack](#tech-stack)** · **[Getting started](#getting-started)** ·
+**[Deployment](#deployment)** · **[Security](#security)**
+
+</div>
 
 ## Overview
 
@@ -55,6 +48,21 @@ covers design, motion, AI-generated imagery, the product code generator, its dat
 
 </div>
 
+## Before & after
+
+The rebuild started with an audit of the old WordPress site. Every problem it found is fixed in this version.
+
+| The old site | This rebuild |
+| --- | --- |
+| The product code generator was embedded through a temporary preview link that could expire at any time | The generator lives on the site itself, with its own database, API and admin |
+| Generator data was split across three sources that disagreed, and a bug dropped the `-XP` suffix from model codes | One Postgres schema merges the three sources into 35 models and 460 options, with the bug fixed |
+| Changing generator data needed a developer | Staff edit it at `/admin` and publish in seconds, without a redeploy |
+| No main heading, meta description or link previews on the homepage, and 9 of 17 images without alt text | Every page has a heading structure, meta description, Open Graph tags and alt text |
+| Stat counters read **0** to search engines until their animation ran | The real numbers are in the HTML |
+| Flow Sensors was missing from the products page, and some products were listed twice | All 13 categories on the products page, Flow Sensors included, each device with its datasheet |
+| The Career page had no way to apply | An open-application form |
+| A generic page-builder template | A custom design system, motion system and AI-generated imagery made from the real products |
+
 ## Screenshots
 
 <table>
@@ -63,20 +71,16 @@ covers design, motion, AI-generated imagery, the product code generator, its dat
     <td width="50%"><img src="docs/images/home-solutions.jpg" alt="Homepage solutions section"><br><sub><b>Home</b> · residential and industrial solutions</sub></td>
   </tr>
   <tr>
-    <td><img src="docs/images/products.jpg" alt="Products page hero with device lineup and catalog counts"><br><sub><b>Products</b> · 60 devices in 13 categories, search and filters</sub></td>
     <td><img src="docs/images/generator.jpg" alt="Product code generator with a configured sensor and its ordering code"><br><sub><b>Code generator</b> · each option fills its segment of the ordering code live</sub></td>
-  </tr>
-  <tr>
     <td><img src="docs/images/generator-decode.jpg" alt="Code generator landing with a field to decode an existing code"><br><sub><b>Code generator</b> · paste any ordering code to decode it</sub></td>
-    <td><img src="docs/images/home-featured.jpg" alt="Featured industrial switch section with specifications"><br><sub><b>Home</b> · featured switch with real specifications</sub></td>
   </tr>
   <tr>
+    <td><img src="docs/images/products.jpg" alt="Products page hero with device lineup and catalog counts"><br><sub><b>Products</b> · 60 devices in 13 categories, with search and filters</sub></td>
     <td><img src="docs/images/career.jpg" alt="Career page hero with AI-generated video of NeoWave devices"><br><sub><b>Career</b> · AI-generated video loop built from the real products</sub></td>
-    <td><img src="docs/images/news.jpg" alt="News and events page"><br><sub><b>News & events</b> · featured article and journal</sub></td>
   </tr>
   <tr>
+    <td><img src="docs/images/news.jpg" alt="News and events page"><br><sub><b>News & events</b> · featured article and journal</sub></td>
     <td><img src="docs/images/contact.jpg" alt="Contact page with contact cards over interactive waves"><br><sub><b>Contact</b> · topic-based form, details and map</sub></td>
-    <td></td>
   </tr>
 </table>
 
@@ -120,25 +124,32 @@ covers design, motion, AI-generated imagery, the product code generator, its dat
 ## Architecture
 
 ```mermaid
-flowchart LR
-    V([Visitor]) --> S["Static site<br/>site/"]
-    V --> G["/api/generator"]
-    V --> M["/media/products/*"]
-    A([Admin]) --> AD["/admin UI"] --> API["/api/admin/*"]
+flowchart TB
+    visitor([Visitor])
+    admin([Admin])
 
-    subgraph Vercel
-      S
-      G
-      M
-      AD
-      API
+    subgraph vercel [Vercel]
+        direction LR
+        pages["Static pages<br/>site/"]
+        genapi["/api/generator"]
+        media["/media proxy"]
+        adminapi["/admin UI + /api/admin"]
     end
 
-    API -- "read / write<br/>publish snapshot" --> DB[(Neon Postgres<br/>schema pcg)]
-    G -- "latest snapshot<br/>edge-cached ~60 s" --> DB
-    API -- upload --> OS[(Neon object storage<br/>private bucket)]
-    M -- "proxy<br/>cached 1 year" --> OS
-    G -. "fallback" .-> F[generator.json]
+    subgraph neon [Neon]
+        direction LR
+        db[("Postgres<br/>schema pcg")]
+        bucket[("Object storage<br/>private bucket")]
+    end
+
+    visitor --> pages
+    visitor --> genapi
+    visitor --> media
+    admin --> adminapi
+    adminapi -- "edit and publish" --> db
+    adminapi -- "photo uploads" --> bucket
+    genapi -- "latest snapshot, edge-cached" --> db
+    media -- "cached for a year" --> bucket
 ```
 
 - **Static pages.** `site/index.html` is hand-written and acts as the template: `gen/chrome.py` copies its head, nav,
@@ -147,6 +158,8 @@ flowchart LR
   published data, and `api/media.js` streams product photos from the private bucket.
 - **Database.** Schema `pcg`: families → product types → features → models → ordered option groups → options, plus
   admin users, sign-in attempts, the audit log and published snapshots.
+- **Fallback.** If the generator API is ever unavailable, the generator loads a static copy of its data from
+  `site/assets/data/generator.json`.
 - **Ordering code** = model base code + `-` + each option group's chosen code, in order.
 
 ## Tech stack
@@ -251,4 +264,10 @@ More operational detail (admins, publishing, photo uploads, analytics): [gen/REA
 
 ---
 
-<div align="center"><sub>Product names, photos and data © NeoWave.</sub></div>
+<div align="center">
+
+Designed and built by **[Seif Ashraf](https://github.com/darkxgs)**
+
+<sub>Product names, photos and data © NeoWave.</sub>
+
+</div>

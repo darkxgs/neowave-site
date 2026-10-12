@@ -1,7 +1,6 @@
 # never deploy local tooling, secrets or raw downloads (anchored to the project root)
 /gen
 /assets
-/.claude
 /dev-server.mjs
 /node_modules
 /.env*
