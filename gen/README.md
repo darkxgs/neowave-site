@@ -52,7 +52,7 @@ Ordering code = `model.base_code` + `-` + each spec's chosen option `code`, in `
 
 ### Admins
 
-Admins sign in with a **username** (or email). The current admin username is `neowave1`.
+Admins sign in with a **username** (or email).
 Change your password by clicking your name in the admin's top bar.
 More admins: **Team** tab → Create account (a one-time temporary password is shown).
 
