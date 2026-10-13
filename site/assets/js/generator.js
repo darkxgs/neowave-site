@@ -27,7 +27,7 @@
           const r = await fetch('/api/generator', {signal: ctl.signal});
           if (r.ok) { const j = await r.json(); if (j && Array.isArray(j.models)) return j; }
         } catch (e) { /* fall through */ }
-        const r = await fetch('assets/data/generator.json?v=6df74e31');
+        const r = await fetch('assets/data/generator.json?v=47e6787c');
         if (!r.ok) throw r;
         return r.json();
       })();
